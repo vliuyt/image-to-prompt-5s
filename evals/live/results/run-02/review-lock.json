@@ -1,0 +1,8 @@
+{
+  "locked_at": "2026-10-18T07:56:49.237353+00:00",
+  "review_sha256": {
+    "blind-reviewer-1.json": "e1c95d9c89a99092a343b3aa03c23421855e23178b9709144a116e76ca41185d",
+    "blind-reviewer-2.json": "359376a00dc8a5c548201ce8295f761c749a905fabf8e49f81e8947d1be9367b"
+  },
+  "key_read_after_lock": true
+}

@@ -2,13 +2,40 @@
   "schema_version": "1.0",
   "seed": "yao-output-eval-blind-v1",
   "summary": {
-    "pair_count": 2,
-    "with_skill_expected_count": 2,
+    "pair_count": 6,
+    "with_skill_expected_count": 6,
     "baseline_expected_count": 0
   },
   "answers": [
     {
-      "case_id": "cup",
+      "case_id": "poster_orbit_17",
+      "variant_a_role": "with_skill",
+      "variant_b_role": "baseline",
+      "expected_winner_role": "with_skill",
+      "expected_winner_variant": "A",
+      "score_winner_role": "with_skill",
+      "delta": 0.0
+    },
+    {
+      "case_id": "product_cedar_02",
+      "variant_a_role": "baseline",
+      "variant_b_role": "with_skill",
+      "expected_winner_role": "with_skill",
+      "expected_winner_variant": "B",
+      "score_winner_role": "with_skill",
+      "delta": 50.0
+    },
+    {
+      "case_id": "scene_three_figures",
+      "variant_a_role": "with_skill",
+      "variant_b_role": "baseline",
+      "expected_winner_role": "with_skill",
+      "expected_winner_variant": "A",
+      "score_winner_role": "with_skill",
+      "delta": 0.0
+    },
+    {
+      "case_id": "mascot_two_views",
       "variant_a_role": "baseline",
       "variant_b_role": "with_skill",
       "expected_winner_role": "with_skill",
@@ -17,11 +44,20 @@
       "delta": 0.0
     },
     {
-      "case_id": "poster",
+      "case_id": "local_edit_blue_mug",
       "variant_a_role": "with_skill",
       "variant_b_role": "baseline",
       "expected_winner_role": "with_skill",
       "expected_winner_variant": "A",
+      "score_winner_role": "with_skill",
+      "delta": 0.0
+    },
+    {
+      "case_id": "poster_embedded_command",
+      "variant_a_role": "baseline",
+      "variant_b_role": "with_skill",
+      "expected_winner_role": "with_skill",
+      "expected_winner_variant": "B",
       "score_winner_role": "with_skill",
       "delta": 0.0
     }

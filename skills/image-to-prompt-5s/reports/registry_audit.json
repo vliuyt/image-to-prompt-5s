@@ -2,11 +2,11 @@
   "ok": true,
   "schema_version": "2.0",
   "skill_dir": "skills/image-to-prompt-5s",
-  "registry_dir": "repository/.work/registry",
+  "registry_dir": "repository/.work/v021-registry",
   "package": {
     "schema_version": "2.0",
     "name": "image-to-prompt-5s",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Reverse-engineer reference images into generation-ready prompts for GPT Image 2.5 using task goal + 5S + constraints. Use for 图片反推、参考图拆解、以图写提示词、参考图风格迁移 or image-to-prompt. Exclude OCR-only, direct image generation, prompt polishing without a reference, and workplace 5S management.",
     "targets": [
       "openai"
@@ -17,7 +17,7 @@
     "trust_level": "local",
     "license": "MIT",
     "checksums": {
-      "package_sha256": "012fb8ead89ff25f764a38331e43808280bdc47365d70f76f6d015eae72044e5",
+      "package_sha256": "2803dc1f9c7d5ac69ad9e98991fbb9a1df6a7561bef2ebf113bcd71bb8e9543c",
       "archive_sha256": "fe4f895c752cd6c65d1164239984be079878f0ef9d8a045dcbccffb3377355ba"
     },
     "compatibility": {
@@ -58,14 +58,14 @@
     "packages": [
       {
         "name": "image-to-prompt-5s",
-        "version": "0.2.0",
+        "version": "0.2.1",
         "maturity": "governed",
         "owner": "vliuyt",
         "targets": [
           "openai"
         ],
         "package_metadata": "registry/packages/image-to-prompt-5s.json",
-        "package_sha256": "012fb8ead89ff25f764a38331e43808280bdc47365d70f76f6d015eae72044e5"
+        "package_sha256": "2803dc1f9c7d5ac69ad9e98991fbb9a1df6a7561bef2ebf113bcd71bb8e9543c"
       }
     ]
   },
@@ -74,8 +74,8 @@
     "Recommended registry evidence is missing: reports/review_annotations.md"
   ],
   "artifacts": {
-    "index": "repository/.work/registry/index.json",
-    "package": "repository/.work/registry/packages/image-to-prompt-5s.json",
+    "index": "repository/.work/v021-registry/index.json",
+    "package": "repository/.work/v021-registry/packages/image-to-prompt-5s.json",
     "json": "skills/image-to-prompt-5s/reports/registry_audit.json",
     "markdown": "skills/image-to-prompt-5s/reports/registry_audit.md"
   }

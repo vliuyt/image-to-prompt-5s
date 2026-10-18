@@ -77,10 +77,14 @@
       "reports/output_blind_review_pack.json",
       "reports/output_blind_review_pack.md",
       "reports/output_blind_answer_key.json",
+      "reports/output_review_adjudication.json",
+      "reports/output_review_adjudication.md",
       "reports/conformance_matrix.json",
       "reports/conformance_matrix.md",
       "reports/security_trust_report.json",
       "reports/security_trust_report.md",
+      "reports/runtime_permission_probes.json",
+      "reports/runtime_permission_probes.md",
       "reports/skill_atlas.json",
       "reports/skill_atlas.html"
     ]

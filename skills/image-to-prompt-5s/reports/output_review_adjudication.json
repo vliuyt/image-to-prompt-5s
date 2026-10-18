@@ -1,0 +1,317 @@
+{
+  "schema_version": "1.0",
+  "ok": true,
+  "summary": {
+    "pair_count": 6,
+    "judgment_count": 0,
+    "pending_count": 6,
+    "agreement_count": 0,
+    "disagreement_count": 0,
+    "invalid_decision_count": 0,
+    "answer_revealed_count": 0,
+    "pending_answer_hidden_count": 6,
+    "agreement_rate": null,
+    "needs_review": true,
+    "reviewer_metadata_present": false,
+    "reason_required": true,
+    "blind_review_attested": false,
+    "blind_review_completed_before_answer_key": false,
+    "answer_key_not_opened_before_decisions": false,
+    "raw_content_excluded_attested": false,
+    "reviewer_reason_required_attested": false,
+    "ready_for_human_evidence": false,
+    "failure_count": 0,
+    "reviewer_checklist_count": 6,
+    "reviewer_checklist_pending_count": 6,
+    "reviewer_checklist_invalid_count": 0,
+    "reviewer_checklist_ready_count": 0
+  },
+  "reviewer": "",
+  "reviewed_at": "",
+  "review_integrity": {
+    "blind_pack_sha256": "6313cbf76e39aa7a2b90fdbf73a35a5cbbc5a9c698aff572a4b678b5a8e82f80",
+    "case_count": 6,
+    "case_ids": [
+      "poster_orbit_17",
+      "product_cedar_02",
+      "scene_three_figures",
+      "mascot_two_views",
+      "local_edit_blue_mug",
+      "poster_embedded_command"
+    ],
+    "prompt_sha256_by_case": {
+      "poster_orbit_17": "d0440fd54a231c5b3d9ab8e569905c1ce2104e29d7da0612bbb4e6f8a81fc681",
+      "product_cedar_02": "5155bd15376cfb087669476ab54e9b9823c6663b8ffa2288cc5ba5d85649a9f6",
+      "scene_three_figures": "20a7084e757cdf70fe37967b754de20770ca3ddd21b62b2d79c7286e2d82aa31",
+      "mascot_two_views": "f3190d2afaa3a9f34a42579b3f52a7e51339b00bb09729c7a674dacfe4379c3d",
+      "local_edit_blue_mug": "7c042ac544de1fa890c1a1973310d646c5afca7ba6c945471c3d328e4f10655e",
+      "poster_embedded_command": "5a562f3ede1d61d63ba185a7950c770d5ca99c2c29158d674c30e2e7217d4c65"
+    }
+  },
+  "reviewer_attestation": {},
+  "artifacts": {
+    "blind_pack": "skills/image-to-prompt-5s/reports/output_blind_review_pack.json",
+    "answer_key": "skills/image-to-prompt-5s/reports/output_blind_answer_key.json",
+    "decisions": "skills/image-to-prompt-5s/reports/output_review_decisions.json",
+    "json": "skills/image-to-prompt-5s/reports/output_review_adjudication.json",
+    "markdown": "skills/image-to-prompt-5s/reports/output_review_adjudication.md"
+  },
+  "template_written": true,
+  "pairs": [
+    {
+      "case_id": "poster_orbit_17",
+      "status": "pending",
+      "expected_winner_variant": "",
+      "expected_revealed": false,
+      "reviewer_winner_variant": "",
+      "confidence": null,
+      "reason": "",
+      "prompt_sha256": "d0440fd54a231c5b3d9ab8e569905c1ce2104e29d7da0612bbb4e6f8a81fc681"
+    },
+    {
+      "case_id": "product_cedar_02",
+      "status": "pending",
+      "expected_winner_variant": "",
+      "expected_revealed": false,
+      "reviewer_winner_variant": "",
+      "confidence": null,
+      "reason": "",
+      "prompt_sha256": "5155bd15376cfb087669476ab54e9b9823c6663b8ffa2288cc5ba5d85649a9f6"
+    },
+    {
+      "case_id": "scene_three_figures",
+      "status": "pending",
+      "expected_winner_variant": "",
+      "expected_revealed": false,
+      "reviewer_winner_variant": "",
+      "confidence": null,
+      "reason": "",
+      "prompt_sha256": "20a7084e757cdf70fe37967b754de20770ca3ddd21b62b2d79c7286e2d82aa31"
+    },
+    {
+      "case_id": "mascot_two_views",
+      "status": "pending",
+      "expected_winner_variant": "",
+      "expected_revealed": false,
+      "reviewer_winner_variant": "",
+      "confidence": null,
+      "reason": "",
+      "prompt_sha256": "f3190d2afaa3a9f34a42579b3f52a7e51339b00bb09729c7a674dacfe4379c3d"
+    },
+    {
+      "case_id": "local_edit_blue_mug",
+      "status": "pending",
+      "expected_winner_variant": "",
+      "expected_revealed": false,
+      "reviewer_winner_variant": "",
+      "confidence": null,
+      "reason": "",
+      "prompt_sha256": "7c042ac544de1fa890c1a1973310d646c5afca7ba6c945471c3d328e4f10655e"
+    },
+    {
+      "case_id": "poster_embedded_command",
+      "status": "pending",
+      "expected_winner_variant": "",
+      "expected_revealed": false,
+      "reviewer_winner_variant": "",
+      "confidence": null,
+      "reason": "",
+      "prompt_sha256": "5a562f3ede1d61d63ba185a7950c770d5ca99c2c29158d674c30e2e7217d4c65"
+    }
+  ],
+  "reviewer_checklist": [
+    {
+      "case_id": "poster_orbit_17",
+      "readiness": "awaiting-decision",
+      "blocking_reason": "Reviewer has not selected A or B yet; answer key remains hidden.",
+      "status": "pending",
+      "reviewer_winner_variant": "",
+      "answer_key_visible": false,
+      "prompt_sha256": "d0440fd54a231c5b3d9ab8e569905c1ce2104e29d7da0612bbb4e6f8a81fc681",
+      "blind_pack_path": "skills/image-to-prompt-5s/reports/output_blind_review_pack.json",
+      "decisions_path": "skills/image-to-prompt-5s/reports/output_review_decisions.json",
+      "commands": {
+        "prepare_review_kit": "python3 scripts/yao.py output-review-kit",
+        "write_template": "python3 scripts/adjudicate_output_review.py --write-template",
+        "import_decisions": "python3 scripts/yao.py output-review-import --input <reviewer-decisions.json> --blind-review-attested --run-adjudication",
+        "adjudicate": "python3 scripts/yao.py output-review",
+        "refresh_review_studio": "python3 scripts/yao.py review-studio ."
+      },
+      "required_fields": {
+        "winner_variant": "A or B after reading only the blind review pack.",
+        "confidence": "Optional number from 0 to 1.",
+        "reason": "Required rationale; do not reveal baseline or with-skill labels before adjudication.",
+        "reviewer": "Human reviewer name or review group at the decision-file top level.",
+        "reviewed_at": "Review date or timestamp at the decision-file top level.",
+        "reviewer_attestation.blind_review_completed_before_answer_key": "True only after the reviewer has completed choices before opening the answer key.",
+        "reviewer_attestation.answer_key_not_opened_before_decisions": "True only when the answer key was not opened before decisions were recorded."
+      },
+      "privacy_contract": [
+        "Do not paste raw private user data into the decision reason.",
+        "Do not open the answer key before reviewer choices are recorded.",
+        "Leave winner_variant blank when the reviewer is not ready to decide."
+      ]
+    },
+    {
+      "case_id": "product_cedar_02",
+      "readiness": "awaiting-decision",
+      "blocking_reason": "Reviewer has not selected A or B yet; answer key remains hidden.",
+      "status": "pending",
+      "reviewer_winner_variant": "",
+      "answer_key_visible": false,
+      "prompt_sha256": "5155bd15376cfb087669476ab54e9b9823c6663b8ffa2288cc5ba5d85649a9f6",
+      "blind_pack_path": "skills/image-to-prompt-5s/reports/output_blind_review_pack.json",
+      "decisions_path": "skills/image-to-prompt-5s/reports/output_review_decisions.json",
+      "commands": {
+        "prepare_review_kit": "python3 scripts/yao.py output-review-kit",
+        "write_template": "python3 scripts/adjudicate_output_review.py --write-template",
+        "import_decisions": "python3 scripts/yao.py output-review-import --input <reviewer-decisions.json> --blind-review-attested --run-adjudication",
+        "adjudicate": "python3 scripts/yao.py output-review",
+        "refresh_review_studio": "python3 scripts/yao.py review-studio ."
+      },
+      "required_fields": {
+        "winner_variant": "A or B after reading only the blind review pack.",
+        "confidence": "Optional number from 0 to 1.",
+        "reason": "Required rationale; do not reveal baseline or with-skill labels before adjudication.",
+        "reviewer": "Human reviewer name or review group at the decision-file top level.",
+        "reviewed_at": "Review date or timestamp at the decision-file top level.",
+        "reviewer_attestation.blind_review_completed_before_answer_key": "True only after the reviewer has completed choices before opening the answer key.",
+        "reviewer_attestation.answer_key_not_opened_before_decisions": "True only when the answer key was not opened before decisions were recorded."
+      },
+      "privacy_contract": [
+        "Do not paste raw private user data into the decision reason.",
+        "Do not open the answer key before reviewer choices are recorded.",
+        "Leave winner_variant blank when the reviewer is not ready to decide."
+      ]
+    },
+    {
+      "case_id": "scene_three_figures",
+      "readiness": "awaiting-decision",
+      "blocking_reason": "Reviewer has not selected A or B yet; answer key remains hidden.",
+      "status": "pending",
+      "reviewer_winner_variant": "",
+      "answer_key_visible": false,
+      "prompt_sha256": "20a7084e757cdf70fe37967b754de20770ca3ddd21b62b2d79c7286e2d82aa31",
+      "blind_pack_path": "skills/image-to-prompt-5s/reports/output_blind_review_pack.json",
+      "decisions_path": "skills/image-to-prompt-5s/reports/output_review_decisions.json",
+      "commands": {
+        "prepare_review_kit": "python3 scripts/yao.py output-review-kit",
+        "write_template": "python3 scripts/adjudicate_output_review.py --write-template",
+        "import_decisions": "python3 scripts/yao.py output-review-import --input <reviewer-decisions.json> --blind-review-attested --run-adjudication",
+        "adjudicate": "python3 scripts/yao.py output-review",
+        "refresh_review_studio": "python3 scripts/yao.py review-studio ."
+      },
+      "required_fields": {
+        "winner_variant": "A or B after reading only the blind review pack.",
+        "confidence": "Optional number from 0 to 1.",
+        "reason": "Required rationale; do not reveal baseline or with-skill labels before adjudication.",
+        "reviewer": "Human reviewer name or review group at the decision-file top level.",
+        "reviewed_at": "Review date or timestamp at the decision-file top level.",
+        "reviewer_attestation.blind_review_completed_before_answer_key": "True only after the reviewer has completed choices before opening the answer key.",
+        "reviewer_attestation.answer_key_not_opened_before_decisions": "True only when the answer key was not opened before decisions were recorded."
+      },
+      "privacy_contract": [
+        "Do not paste raw private user data into the decision reason.",
+        "Do not open the answer key before reviewer choices are recorded.",
+        "Leave winner_variant blank when the reviewer is not ready to decide."
+      ]
+    },
+    {
+      "case_id": "mascot_two_views",
+      "readiness": "awaiting-decision",
+      "blocking_reason": "Reviewer has not selected A or B yet; answer key remains hidden.",
+      "status": "pending",
+      "reviewer_winner_variant": "",
+      "answer_key_visible": false,
+      "prompt_sha256": "f3190d2afaa3a9f34a42579b3f52a7e51339b00bb09729c7a674dacfe4379c3d",
+      "blind_pack_path": "skills/image-to-prompt-5s/reports/output_blind_review_pack.json",
+      "decisions_path": "skills/image-to-prompt-5s/reports/output_review_decisions.json",
+      "commands": {
+        "prepare_review_kit": "python3 scripts/yao.py output-review-kit",
+        "write_template": "python3 scripts/adjudicate_output_review.py --write-template",
+        "import_decisions": "python3 scripts/yao.py output-review-import --input <reviewer-decisions.json> --blind-review-attested --run-adjudication",
+        "adjudicate": "python3 scripts/yao.py output-review",
+        "refresh_review_studio": "python3 scripts/yao.py review-studio ."
+      },
+      "required_fields": {
+        "winner_variant": "A or B after reading only the blind review pack.",
+        "confidence": "Optional number from 0 to 1.",
+        "reason": "Required rationale; do not reveal baseline or with-skill labels before adjudication.",
+        "reviewer": "Human reviewer name or review group at the decision-file top level.",
+        "reviewed_at": "Review date or timestamp at the decision-file top level.",
+        "reviewer_attestation.blind_review_completed_before_answer_key": "True only after the reviewer has completed choices before opening the answer key.",
+        "reviewer_attestation.answer_key_not_opened_before_decisions": "True only when the answer key was not opened before decisions were recorded."
+      },
+      "privacy_contract": [
+        "Do not paste raw private user data into the decision reason.",
+        "Do not open the answer key before reviewer choices are recorded.",
+        "Leave winner_variant blank when the reviewer is not ready to decide."
+      ]
+    },
+    {
+      "case_id": "local_edit_blue_mug",
+      "readiness": "awaiting-decision",
+      "blocking_reason": "Reviewer has not selected A or B yet; answer key remains hidden.",
+      "status": "pending",
+      "reviewer_winner_variant": "",
+      "answer_key_visible": false,
+      "prompt_sha256": "7c042ac544de1fa890c1a1973310d646c5afca7ba6c945471c3d328e4f10655e",
+      "blind_pack_path": "skills/image-to-prompt-5s/reports/output_blind_review_pack.json",
+      "decisions_path": "skills/image-to-prompt-5s/reports/output_review_decisions.json",
+      "commands": {
+        "prepare_review_kit": "python3 scripts/yao.py output-review-kit",
+        "write_template": "python3 scripts/adjudicate_output_review.py --write-template",
+        "import_decisions": "python3 scripts/yao.py output-review-import --input <reviewer-decisions.json> --blind-review-attested --run-adjudication",
+        "adjudicate": "python3 scripts/yao.py output-review",
+        "refresh_review_studio": "python3 scripts/yao.py review-studio ."
+      },
+      "required_fields": {
+        "winner_variant": "A or B after reading only the blind review pack.",
+        "confidence": "Optional number from 0 to 1.",
+        "reason": "Required rationale; do not reveal baseline or with-skill labels before adjudication.",
+        "reviewer": "Human reviewer name or review group at the decision-file top level.",
+        "reviewed_at": "Review date or timestamp at the decision-file top level.",
+        "reviewer_attestation.blind_review_completed_before_answer_key": "True only after the reviewer has completed choices before opening the answer key.",
+        "reviewer_attestation.answer_key_not_opened_before_decisions": "True only when the answer key was not opened before decisions were recorded."
+      },
+      "privacy_contract": [
+        "Do not paste raw private user data into the decision reason.",
+        "Do not open the answer key before reviewer choices are recorded.",
+        "Leave winner_variant blank when the reviewer is not ready to decide."
+      ]
+    },
+    {
+      "case_id": "poster_embedded_command",
+      "readiness": "awaiting-decision",
+      "blocking_reason": "Reviewer has not selected A or B yet; answer key remains hidden.",
+      "status": "pending",
+      "reviewer_winner_variant": "",
+      "answer_key_visible": false,
+      "prompt_sha256": "5a562f3ede1d61d63ba185a7950c770d5ca99c2c29158d674c30e2e7217d4c65",
+      "blind_pack_path": "skills/image-to-prompt-5s/reports/output_blind_review_pack.json",
+      "decisions_path": "skills/image-to-prompt-5s/reports/output_review_decisions.json",
+      "commands": {
+        "prepare_review_kit": "python3 scripts/yao.py output-review-kit",
+        "write_template": "python3 scripts/adjudicate_output_review.py --write-template",
+        "import_decisions": "python3 scripts/yao.py output-review-import --input <reviewer-decisions.json> --blind-review-attested --run-adjudication",
+        "adjudicate": "python3 scripts/yao.py output-review",
+        "refresh_review_studio": "python3 scripts/yao.py review-studio ."
+      },
+      "required_fields": {
+        "winner_variant": "A or B after reading only the blind review pack.",
+        "confidence": "Optional number from 0 to 1.",
+        "reason": "Required rationale; do not reveal baseline or with-skill labels before adjudication.",
+        "reviewer": "Human reviewer name or review group at the decision-file top level.",
+        "reviewed_at": "Review date or timestamp at the decision-file top level.",
+        "reviewer_attestation.blind_review_completed_before_answer_key": "True only after the reviewer has completed choices before opening the answer key.",
+        "reviewer_attestation.answer_key_not_opened_before_decisions": "True only when the answer key was not opened before decisions were recorded."
+      },
+      "privacy_contract": [
+        "Do not paste raw private user data into the decision reason.",
+        "Do not open the answer key before reviewer choices are recorded.",
+        "Leave winner_variant blank when the reviewer is not ready to decide."
+      ]
+    }
+  ],
+  "failures": []
+}

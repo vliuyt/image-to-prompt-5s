@@ -34,7 +34,14 @@
         "references resource resolves: references/delivery-checklist.md",
         "references resource resolves: references/examples.md",
         "references resource resolves: references/output-template.md",
-        "reports resource resolves: reports/intent-context.json"
+        "reports resource resolves: reports/benchmark_methodology.md",
+        "reports resource resolves: reports/intent-context.json",
+        "reports resource resolves: reports/output-risk-profile.json",
+        "reports resource resolves: reports/output-risk-profile.md",
+        "reports resource resolves: reports/artifact-design-profile.md",
+        "reports resource resolves: reports/prompt-quality-profile.md",
+        "reports resource resolves: reports/skill-overview.json",
+        "reports resource resolves: reports/skill-overview.html"
       ],
       "failures": [],
       "warnings": []

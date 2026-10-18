@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "reviewer": "",
+  "reviewed_at": "",
+  "review_integrity": {
+    "blind_pack_sha256": "6313cbf76e39aa7a2b90fdbf73a35a5cbbc5a9c698aff572a4b678b5a8e82f80",
+    "case_count": 6,
+    "case_ids": [
+      "poster_orbit_17",
+      "product_cedar_02",
+      "scene_three_figures",
+      "mascot_two_views",
+      "local_edit_blue_mug",
+      "poster_embedded_command"
+    ],
+    "prompt_sha256_by_case": {
+      "poster_orbit_17": "d0440fd54a231c5b3d9ab8e569905c1ce2104e29d7da0612bbb4e6f8a81fc681",
+      "product_cedar_02": "5155bd15376cfb087669476ab54e9b9823c6663b8ffa2288cc5ba5d85649a9f6",
+      "scene_three_figures": "20a7084e757cdf70fe37967b754de20770ca3ddd21b62b2d79c7286e2d82aa31",
+      "mascot_two_views": "f3190d2afaa3a9f34a42579b3f52a7e51339b00bb09729c7a674dacfe4379c3d",
+      "local_edit_blue_mug": "7c042ac544de1fa890c1a1973310d646c5afca7ba6c945471c3d328e4f10655e",
+      "poster_embedded_command": "5a562f3ede1d61d63ba185a7950c770d5ca99c2c29158d674c30e2e7217d4c65"
+    }
+  },
+  "reviewer_attestation": {
+    "blind_review_completed_before_answer_key": false,
+    "answer_key_not_opened_before_decisions": false,
+    "raw_content_excluded": true,
+    "reviewer_reason_required": true
+  },
+  "decision_contract": {
+    "winner_variant": "Use A or B after reading the blind review pack. Leave blank when pending.",
+    "confidence": "Optional number from 0 to 1.",
+    "reason": "Required reviewer rationale. Do not reveal baseline or with-skill labels before adjudication.",
+    "reviewer_attestation": "Set blind_review_completed_before_answer_key and answer_key_not_opened_before_decisions to true only after a real blind review."
+  },
+  "decisions": [
+    {
+      "case_id": "poster_orbit_17",
+      "winner_variant": "",
+      "confidence": null,
+      "reason": ""
+    },
+    {
+      "case_id": "product_cedar_02",
+      "winner_variant": "",
+      "confidence": null,
+      "reason": ""
+    },
+    {
+      "case_id": "scene_three_figures",
+      "winner_variant": "",
+      "confidence": null,
+      "reason": ""
+    },
+    {
+      "case_id": "mascot_two_views",
+      "winner_variant": "",
+      "confidence": null,
+      "reason": ""
+    },
+    {
+      "case_id": "local_edit_blue_mug",
+      "winner_variant": "",
+      "confidence": null,
+      "reason": ""
+    },
+    {
+      "case_id": "poster_embedded_command",
+      "winner_variant": "",
+      "confidence": null,
+      "reason": ""
+    }
+  ]
+}

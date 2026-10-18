@@ -1,15 +1,15 @@
-> Evidence scope: recorded v0.1.0 authored examples, identical on both sides. Not a model comparison, not human review, not evidence of improvement. See benchmark_methodology.md.
+> Scope: real vision-model outputs. Independent model-only blind reviews are in independent_model_review.json and the repository live-evaluation report. Human reviews remain pending; five ties are not forced into A/B wins. Lexical checks are supplementary and post-run.
 
 # Output Quality Scorecard
 
-This scorecard runs regression assertions on recorded examples. Column names are generic tool labels.
+This v0 scorecard compares static without-skill and with-skill outputs using assertion grading.
 
-- Cases: `2`
-- Baseline pass rate: `100.0`
+- Cases: `6`
+- Baseline pass rate: `91.67`
 - With-skill pass rate: `100.0`
-- Delta: `0.0`
+- Delta: `8.33`
 - Regressions: `0`
-- Blind A/B pairs: `2`
+- Blind A/B pairs: `6`
 - Gate pass: `True`
 
 Blind review artifacts are generated separately so reviewers can inspect A/B outputs without seeing the answer key.
@@ -19,8 +19,12 @@ Run output review adjudication after reviewer decisions are recorded; pending ca
 
 | Case | Baseline | With Skill | Delta | Winner | Failed With-Skill Assertions |
 | --- | ---: | ---: | ---: | --- | --- |
-| cup | 100.0 | 100.0 | 0.0 | tie (identical fixtures) | None |
-| poster | 100.0 | 100.0 | 0.0 | tie (identical fixtures) | None |
+| poster_orbit_17 | 100.0 | 100.0 | 0.0 | with_skill | None |
+| product_cedar_02 | 50.0 | 100.0 | 50.0 | with_skill | None |
+| scene_three_figures | 100.0 | 100.0 | 0.0 | with_skill | None |
+| mascot_two_views | 100.0 | 100.0 | 0.0 | with_skill | None |
+| local_edit_blue_mug | 100.0 | 100.0 | 0.0 | with_skill | None |
+| poster_embedded_command | 100.0 | 100.0 | 0.0 | with_skill | None |
 
 ## Failure Taxonomy
 

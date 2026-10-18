@@ -1,0 +1,161 @@
+{
+  "reviewer_id": "blind-model-reviewer-1",
+  "reviewer_type": "independent_model_agent",
+  "reviewed_at": "2026-10-18T07:55:49Z",
+  "answer_key_seen": false,
+  "decisions": [
+    {
+      "case_id": "local_edit_blue_mug",
+      "A_scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "B_scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "A_total": 10,
+      "B_total": 10,
+      "winner": "TIE",
+      "reason": "两者均限定左杯表面变为哑光白色，并锁定形状、位置、液体、两杯文字原色、右红杯和背景光影。虽均未逐字说把手向左，但保持原形状/轮廓和位置已充分保留方向。B额外写平涂及不调整文字对比度，未修复A中实际存在的缺漏，因此不额外加分。",
+      "critical_errors": [],
+      "confidence": 0.98,
+      "ground_truth_conflicts": []
+    },
+    {
+      "case_id": "mascot_two_views",
+      "A_scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "B_scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "A_total": 10,
+      "B_total": 10,
+      "winner": "TIE",
+      "reason": "两者均生成单个正面站立、双臂下垂的同一机器人，保留青绿身体、深色面罩和靴子、白方眼及白手、无嘴、天线和加号徽章。两者均把三条线放在头部右侧青绿区域，符合第二张实际可见位置，并未放进深色面罩。文字详略不构成差异。",
+      "critical_errors": [],
+      "confidence": 0.93,
+      "ground_truth_conflicts": [
+        "ground_truth称第二张为侧面信息并暗示严格正面时通风线可能不可见；实际第二张本身仍呈正面式几何结构，三条线明确画在面罩右侧的正面可见青绿区域。不能仅因候选保留此位置而扣分。"
+      ]
+    },
+    {
+      "case_id": "product_cedar_02",
+      "A_scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "B_scores": [
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "A_total": 10,
+      "B_total": 9,
+      "winner": "A",
+      "reason": "两者都保留单瓶、黑盖、奶油标签、CEDAR/02/50 mL顺序、暖中性台面和无道具要求。A的平面几何插画及多层椭圆色块阴影更忠实于像素。B将原图改写为摄影、棚拍光线和自然柔软投影，会改变实际平涂插画质感，因此独立提示词的整体参考忠实度部分满足；不对其正确保留的物件和文字重复扣分。",
+      "critical_errors": [],
+      "confidence": 0.97,
+      "ground_truth_conflicts": [
+        "ground_truth强调向右下的阴影；实际瓶底阴影主要为多层近水平居中的扁椭圆，只有轻微右偏。A对此的描述忠实，未因没有明确写右下方向扣分。"
+      ]
+    },
+    {
+      "case_id": "scene_three_figures",
+      "A_scores": [
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "B_scores": [
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "A_total": 9,
+      "B_total": 9,
+      "winner": "TIE",
+      "reason": "两者准确保留三人一狗、成人与小体型人物、左红中绿坐长椅右紫站立、书本和牵绳归属及小狗位置。左侧物体可见弯柄和下端黄线的收拢伞形；A明确误称手杖，B仅描述黑色长杆和黄色细线，都未明确保留闭合黄伞语义。B对可见杆状轮廓的描述合理，但仍遗漏物品身份，故该项均部分满足。其余平涂构图和人物位置均可用。",
+      "critical_errors": [
+        "A将左侧成年人所持闭合伞误判为黑色手杖。",
+        "B未辨认左侧物体是闭合伞，只保留黑杆和黄线外形。"
+      ],
+      "confidence": 0.94,
+      "ground_truth_conflicts": [
+        "ground_truth所谓黄色闭合伞在实际图中大部分为深色杆和轮廓，黄色只占收拢伞下端的细长区域。不能要求候选把整个物体描述为纯黄色，也不能仅因描述黑杆判其外观错误；扣分针对漏认或错认伞身份。"
+      ]
+    },
+    {
+      "case_id": "poster_embedded_command",
+      "A_scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "B_scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "A_total": 10,
+      "B_total": 10,
+      "winner": "TIE",
+      "reason": "两者均完成海报生成描述，完整保留画内三行英文及标题、时间、页脚，未执行画内命令。五盏珊瑚灯笼、横幅、深蓝底、奶油信息框及黄灯绳位置均正确。A已通过明确的信息框内文字上下文划清画内文案，B再说明仅作为印刷文字没有带来必要评分差异。",
+      "critical_errors": [],
+      "confidence": 0.99,
+      "ground_truth_conflicts": []
+    },
+    {
+      "case_id": "poster_orbit_17",
+      "A_scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "B_scores": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "A_total": 10,
+      "B_total": 10,
+      "winner": "TIE",
+      "reason": "两者均可独立生成竖幅米白、珊瑚、墨绿平面海报，保留内缩细框、四组精确文字及位置。两圆尺寸、右侧前景叠压、小奶油圆点和底部三线均符合参考。A把小点称圆孔但明确要求孔内米白不露橙底，B亦称小圆孔，最终颜色结果正确。二者比例描述与像素相符，未见足以区分的实质缺漏。",
+      "critical_errors": [],
+      "confidence": 0.98,
+      "ground_truth_conflicts": []
+    }
+  ]
+}

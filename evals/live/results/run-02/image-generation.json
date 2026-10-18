@@ -1,0 +1,26 @@
+[
+  {
+    "variant": "baseline",
+    "tool": "image_gen__imagegen",
+    "backend_model": "not exposed by tool",
+    "seed": "not exposed by tool",
+    "input_reference": false,
+    "prompt_sha256": "96322fc5047fa462bd15c813490bcf33d6879d1a6247d322326715eddb80d1ad",
+    "output_sha256": "f71f25dc0cbc21b1dcfb7ef225c0aaf21e455d461cbe234745da1bec953f4a4c",
+    "output": "evals/live/results/run-02/generated/baseline.png",
+    "attempt": 1,
+    "quality_rerolls": 0
+  },
+  {
+    "variant": "with_skill",
+    "tool": "image_gen__imagegen",
+    "backend_model": "not exposed by tool",
+    "seed": "not exposed by tool",
+    "input_reference": false,
+    "prompt_sha256": "08da7cb7eb4120e2c78ba9cf31a2b2b6169295c727225fe88a904fcd5bd8588b",
+    "output_sha256": "c0096aa082d9b47bbb895aee12ecf3654ba50274a785e665bd0d7385c7c9e6c2",
+    "output": "evals/live/results/run-02/generated/with_skill.png",
+    "attempt": 1,
+    "quality_rerolls": 0
+  }
+]

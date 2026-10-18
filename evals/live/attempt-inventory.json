@@ -1,0 +1,503 @@
+{
+  "summary": {
+    "provider_attempts": 25,
+    "formal_successful_responses": 12,
+    "pilot_attempts": 13,
+    "attempts_with_observed_usage": 24,
+    "attempts_with_unknown_usage": 1,
+    "observed_input_tokens": 650689,
+    "observed_output_tokens": 10476,
+    "unknown_usage_not_counted_as_zero": true,
+    "image_generation_calls": 2,
+    "independent_prompt_reviewers": 2,
+    "independent_image_reviewers": 2,
+    "reviewer_token_usage": "not exposed by collaboration tools",
+    "image_backend_model_and_usage": "not exposed by image_gen tool",
+    "observed_cached_input_tokens": 93952
+  },
+  "attempts": [
+    {
+      "case_id": "scene_three_figures",
+      "variant": "with_skill",
+      "status": "failed",
+      "duration_ms": 8595.08,
+      "usage": {},
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "failure_events": [
+        {
+          "type": "error",
+          "message": "Selected model is at capacity. Please try a different model."
+        },
+        {
+          "type": "turn.failed",
+          "message": "Selected model is at capacity. Please try a different model."
+        }
+      ],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "pilot"
+    },
+    {
+      "case_id": "poster_orbit_17",
+      "variant": "baseline",
+      "status": "pass",
+      "duration_ms": 17403.29,
+      "usage": {
+        "input_tokens": 30611,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 379,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "ba2ca89de92ee27b2f7d4c78e431d06efae6e597fa49843fe7b9243597c35649",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "pilot"
+    },
+    {
+      "case_id": "local_edit_blue_mug",
+      "variant": "baseline",
+      "status": "pass",
+      "duration_ms": 12197.1,
+      "usage": {
+        "input_tokens": 30142,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 114,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "6c6f607dd4e0e00fe3a939bbe76c71daf9f08ea05852aa4754404608ed99c0ec",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "pilot"
+    },
+    {
+      "case_id": "poster_embedded_command",
+      "variant": "baseline",
+      "status": "pass",
+      "duration_ms": 16037.53,
+      "usage": {
+        "input_tokens": 30513,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 259,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "c6f6d194c7fa4e7e2b8c232ba1b2759f33f8d20d5091a053430c74b513e6a499",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "pilot"
+    },
+    {
+      "case_id": "poster_embedded_command",
+      "variant": "with_skill",
+      "status": "pass",
+      "duration_ms": 27407.67,
+      "usage": {
+        "input_tokens": 34315,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 731,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "a02af43fb63f45395337f404a73c97fdfbbc148c68939f5a7bb099fdab94fd3e",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "pilot"
+    },
+    {
+      "case_id": "local_edit_blue_mug",
+      "variant": "with_skill",
+      "status": "pass",
+      "duration_ms": 15018.2,
+      "usage": {
+        "input_tokens": 33944,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 153,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "9b9b758775a879fc27af66c94a202bf45b45048f88158a5e81113328c9650bf7",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "pilot"
+    },
+    {
+      "case_id": "product_cedar_02",
+      "variant": "with_skill",
+      "status": "pass",
+      "duration_ms": 22599.53,
+      "usage": {
+        "input_tokens": 34047,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 678,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "b916c38c826644b1aa14ee0953f19dbea9b1834888070156c0fc8b02f150bef4",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "pilot"
+    },
+    {
+      "case_id": "mascot_two_views",
+      "variant": "with_skill",
+      "status": "pass",
+      "duration_ms": 26851.83,
+      "usage": {
+        "input_tokens": 34462,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 869,
+        "reasoning_output_tokens": 59
+      },
+      "output_sha256": "34362c37f90c3b4287467b595edbf7d52dca3ff3c7bb13ded16f55c9e06ed786",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "pilot"
+    },
+    {
+      "case_id": "product_cedar_02",
+      "variant": "baseline",
+      "status": "failed",
+      "duration_ms": 17020.66,
+      "usage": {
+        "input_tokens": 30998,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 242,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "6574cf5235f22285d23545c6099ea3f473e44e6bff643f572e92a96cd29efc7b",
+      "failure_events": [
+        {
+          "type": "item.error",
+          "message": "Exceeded skills context budget. All skill descriptions were removed and 31 additional skills were not included in the model-visible skills list."
+        }
+      ],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "pilot"
+    },
+    {
+      "case_id": "poster_orbit_17",
+      "variant": "with_skill",
+      "status": "pass",
+      "duration_ms": 23565.82,
+      "usage": {
+        "input_tokens": 34413,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 558,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "a69d32407d9aaae3d967142f09705e850b09082f5a687fb94ad54cb84e3c0346",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "pilot"
+    },
+    {
+      "case_id": "mascot_two_views",
+      "variant": "baseline",
+      "status": "pass",
+      "duration_ms": 15297.74,
+      "usage": {
+        "input_tokens": 30660,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 235,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "b0427ec7c479f016341eb1b4fda57db856d027c4227a9a7580b15d5cd815c194",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "pilot"
+    },
+    {
+      "case_id": "scene_three_figures",
+      "variant": "baseline",
+      "status": "pass",
+      "duration_ms": 18250.2,
+      "usage": {
+        "input_tokens": 30423,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 310,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "85f266a83dddf8700f607f1f740c6567563774a3812420ceda43e62692770f5e",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "pilot"
+    },
+    {
+      "case_id": "scene_three_figures",
+      "variant": "with_skill",
+      "status": "pass",
+      "duration_ms": 22926.05,
+      "usage": {
+        "input_tokens": 34233,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 510,
+        "reasoning_output_tokens": 70
+      },
+      "output_sha256": "61dbf5622d2c392f94b17fbadd8cb446d6376027001f5c8cc08ab48d1a54e7c7",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "pilot-retry"
+    },
+    {
+      "case_id": "scene_three_figures",
+      "variant": "with_skill",
+      "status": "pass",
+      "duration_ms": 23000.47,
+      "usage": {
+        "input_tokens": 23719,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 537,
+        "reasoning_output_tokens": 65
+      },
+      "output_sha256": "66e8c910364e7068a4836e0c78aa44da42589943c9e710fc46d2a4b468c0b130",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "formal"
+    },
+    {
+      "case_id": "mascot_two_views",
+      "variant": "with_skill",
+      "status": "pass",
+      "duration_ms": 33498.03,
+      "usage": {
+        "input_tokens": 23956,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 817,
+        "reasoning_output_tokens": 58
+      },
+      "output_sha256": "6fb74f24bfefb94fb95fcfe3137289b4619de063d2d7d433985c61051de109d6",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "formal"
+    },
+    {
+      "case_id": "poster_embedded_command",
+      "variant": "with_skill",
+      "status": "pass",
+      "duration_ms": 23728.66,
+      "usage": {
+        "input_tokens": 23809,
+        "cached_input_tokens": 15104,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 727,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "04713a13ecfed788087e80f0a02249545fdbfba90d9d96c7871e7eaa8fe262d5",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "formal"
+    },
+    {
+      "case_id": "poster_orbit_17",
+      "variant": "baseline",
+      "status": "pass",
+      "duration_ms": 19038.12,
+      "usage": {
+        "input_tokens": 20105,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 415,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "c257f56f8373ab14bd51eae32685850fca3ef4f6c60f9e2a7c620ce0146bc9f7",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "formal"
+    },
+    {
+      "case_id": "local_edit_blue_mug",
+      "variant": "baseline",
+      "status": "pass",
+      "duration_ms": 9764.38,
+      "usage": {
+        "input_tokens": 19636,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 91,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "99b2c63a8b8e7200fe2b06953a55cc95c8c83440a104616fe3edd5b4feb0e05b",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "formal"
+    },
+    {
+      "case_id": "local_edit_blue_mug",
+      "variant": "with_skill",
+      "status": "pass",
+      "duration_ms": 13013.51,
+      "usage": {
+        "input_tokens": 23438,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 170,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "8c3d39086235e260115210137bdfccc5abed4518084999027fc34b54471f9ebe",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "formal"
+    },
+    {
+      "case_id": "product_cedar_02",
+      "variant": "baseline",
+      "status": "pass",
+      "duration_ms": 17927.56,
+      "usage": {
+        "input_tokens": 19739,
+        "cached_input_tokens": 7168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 267,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "96322fc5047fa462bd15c813490bcf33d6879d1a6247d322326715eddb80d1ad",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "formal"
+    },
+    {
+      "case_id": "product_cedar_02",
+      "variant": "with_skill",
+      "status": "pass",
+      "duration_ms": 21417.76,
+      "usage": {
+        "input_tokens": 23541,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 674,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "23e67265b7f0aae1a986f3c8f2bdaac1e83c168da12f5c63f6f0657e8b4b5098",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "formal"
+    },
+    {
+      "case_id": "scene_three_figures",
+      "variant": "baseline",
+      "status": "pass",
+      "duration_ms": 15788.88,
+      "usage": {
+        "input_tokens": 19917,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 298,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "4508d15727b28c05f5b78eb27f57ca4b07943c6252e58adfb5dbd3cb5ac7a5bf",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "formal"
+    },
+    {
+      "case_id": "mascot_two_views",
+      "variant": "baseline",
+      "status": "pass",
+      "duration_ms": 17249.54,
+      "usage": {
+        "input_tokens": 20154,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 241,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "1074f65c1fd0928d4d9d55b9721a7c89eff0eb8170d60b865b3f1086f238cdf3",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "formal"
+    },
+    {
+      "case_id": "poster_orbit_17",
+      "variant": "with_skill",
+      "status": "pass",
+      "duration_ms": 30114.87,
+      "usage": {
+        "input_tokens": 23907,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 931,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "3a874e34dc337cf8d986d8eea26b134161f830d2981dabe64e5501cda7958115",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "formal"
+    },
+    {
+      "case_id": "poster_embedded_command",
+      "variant": "baseline",
+      "status": "pass",
+      "duration_ms": 16170.36,
+      "usage": {
+        "input_tokens": 20007,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 270,
+        "reasoning_output_tokens": 0
+      },
+      "output_sha256": "76be4e9a36b68e1d07c35a0df558b752d5c8d3a19857c5935e42f110bdc3c717",
+      "failure_events": [],
+      "host_diagnostics": [
+        "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+      ],
+      "phase": "formal"
+    }
+  ]
+}

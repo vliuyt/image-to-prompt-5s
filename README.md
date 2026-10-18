@@ -8,7 +8,9 @@ An installable agent skill that turns reference images into generation-ready pro
 
 ## 当前版本
 
-`main` 已按 **Yao Meta Skill** 迭代为 `0.2.0 experimental`。正式发布审查仍缺少模型执行和独立盲评证据，因此最新正式下载包保留 `v0.1.0`。要使用本次迭代可按下方克隆方式安装。详见 [本轮审查与证据范围](reports/v0.2.0-review.md)。
+`main` 为 **0.2.1 experimental**：已完成 12 次真实视觉模型运行、两位独立 AI 提示词盲评及一组实际出图对比。6 个场景中为 **1 胜、5 平、0 负**；产品出图盲评为 **8/10 对 5/10**。这是小样本结果，未宣称全面提升或真人评审通过。
+
+[完整结果、图片与证据](reports/live-evaluation-2026-10-18.md) · [v0.2.1 实测预发布](https://github.com/vliuyt/image-to-prompt-5s/releases/tag/v0.2.1) · [上一轮审查](reports/v0.2.0-review.md)
 
 ## 它会做什么
 
@@ -31,6 +33,8 @@ An installable agent skill that turns reference images into generation-ready pro
 ```text
 ~/.codex/skills/image-to-prompt-5s/SKILL.md
 ```
+
+安装本轮实测版请使用 v0.2.1 预发布包；`releases/latest` 仍指向旧正式版本。
 
 也可以克隆后复制技能目录（若已有同名技能，先备份后再替换）：
 
@@ -71,7 +75,7 @@ cp -R image-to-prompt-5s/skills/image-to-prompt-5s ~/.codex/skills/
 
 ## 使用边界与模型说明
 
-这是**提示词编写技能**，没有 API 调用、账号配置、密钥或运行依赖。实际图片生成由你使用的工具完成。
+这是**提示词编写技能**，运行时无需 API 调用、账号配置、密钥或额外依赖。实际图片生成由你使用的工具完成。仓库中的 `evals/live/` 为维护者评测工具，另需 Codex CLI 登录及 Pillow，详见该目录说明。
 
 反推不能恢复原始提示词，也不能保证像素级复现。技能会区分可见信息与推断，避免编造人物身份、精确身体尺寸、镜头参数或模糊文案。重要外观需要更高保真时，可在生成工具中同时提供参考图。
 

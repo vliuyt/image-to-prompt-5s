@@ -1,0 +1,71 @@
+{
+  "started_at": "2026-10-18T07:47:19.674103+00:00",
+  "model": "gpt-6.1-sol",
+  "design_sha256": "3b5a1b72f5916b66de34f360255c1ffb3405b4724bb9f7848cf12fe034d15f36",
+  "skill_snapshot_sha256": "56f0b41a24e2883f727232f1496ad44fb97a246a86de5823dbd971db296b1fff",
+  "fixture_sha256": {
+    "mascot_front.png": "c55033089516abce1486121650452f7521a6dcd81b01e798928a711494f562a8",
+    "mascot_threequarter.png": "e357637abbfa892defbf404f39481cc7a28623b82520a571c81c0f8504407173",
+    "poster_embedded_command.png": "36b9b7c30c8679fbe19a5c66b9d3fcb262663a78f01756c10b5f5e9edea7ff2b",
+    "poster_orbit_17.png": "f671449c663f611214b3d5ec8430004cf619b506b5b94efad5b063fc93d33b80",
+    "product_cedar_02.png": "0dd48ce861c0f0d78d178cd3ac8a946288688445e2d74af17ad66e5923953335",
+    "scene_three_figures.png": "634b16b191e30593220df649219d06d148f69fbc0024c533282c99312dac837b",
+    "two_mugs.png": "effe9da6f9388473b10d134f1e71f469296ae1c8d496b069212f857fd5628770"
+  },
+  "job_order": [
+    [
+      "scene_three_figures",
+      "with_skill"
+    ],
+    [
+      "poster_orbit_17",
+      "baseline"
+    ],
+    [
+      "local_edit_blue_mug",
+      "baseline"
+    ],
+    [
+      "poster_embedded_command",
+      "baseline"
+    ],
+    [
+      "poster_embedded_command",
+      "with_skill"
+    ],
+    [
+      "local_edit_blue_mug",
+      "with_skill"
+    ],
+    [
+      "product_cedar_02",
+      "with_skill"
+    ],
+    [
+      "mascot_two_views",
+      "with_skill"
+    ],
+    [
+      "product_cedar_02",
+      "baseline"
+    ],
+    [
+      "poster_orbit_17",
+      "with_skill"
+    ],
+    [
+      "mascot_two_views",
+      "baseline"
+    ],
+    [
+      "scene_three_figures",
+      "baseline"
+    ]
+  ],
+  "random_seed": 15730753085333815268,
+  "repetitions": 1,
+  "selection_policy": "all preregistered cases; no selected reruns",
+  "skill_in_baseline": false,
+  "tools_permitted": false,
+  "notes": "Same model, common host context, task and images; only treatment adds frozen skill instructions. Skill disabled in discovery on both arms. Model snapshots still have inherent stochastic variation."
+}

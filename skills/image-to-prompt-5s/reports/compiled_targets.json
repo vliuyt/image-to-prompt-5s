@@ -33,7 +33,7 @@
       "compiled_contract": {
         "name": "image-to-prompt-5s",
         "title": "5S 图片反推提示词",
-        "version": "0.2.0",
+        "version": "0.2.1",
         "description": "Reverse-engineer reference images into generation-ready prompts for GPT Image 2.5 using task goal + 5S + constraints. Use for 图片反推、参考图拆解、以图写提示词、参考图风格迁移 or image-to-prompt. Exclude OCR-only, direct image generation, prompt polishing without a reference, and workplace 5S management.",
         "job_to_be_done": "Turn visible reference images into faithful, usable generation prompts without inventing unseen details.",
         "trigger": {
@@ -110,10 +110,14 @@
             "reports/output_blind_review_pack.json",
             "reports/output_blind_review_pack.md",
             "reports/output_blind_answer_key.json",
+            "reports/output_review_adjudication.json",
+            "reports/output_review_adjudication.md",
             "reports/conformance_matrix.json",
             "reports/conformance_matrix.md",
             "reports/security_trust_report.json",
             "reports/security_trust_report.md",
+            "reports/runtime_permission_probes.json",
+            "reports/runtime_permission_probes.md",
             "reports/skill_atlas.json",
             "reports/skill_atlas.html"
           ],
@@ -121,7 +125,7 @@
             "references": 4,
             "scripts": 0,
             "assets": 0,
-            "reports": 21
+            "reports": 25
           }
         },
         "eval_plan": {
@@ -264,7 +268,7 @@
               "references": 4,
               "scripts": 0,
               "assets": 0,
-              "reports": 21
+              "reports": 25
             },
             "generated_files": [
               "targets/openai/adapter.json",
@@ -413,7 +417,7 @@
             "references": 4,
             "scripts": 0,
             "assets": 0,
-            "reports": 21
+            "reports": 25
           },
           "generated_files": [
             "targets/openai/adapter.json",

@@ -1,0 +1,26 @@
+{
+  "recorded_at": "2026-10-18T07:53:26.595559+00:00",
+  "before_candidate_answers_read": true,
+  "trial": "run-02",
+  "pilot_exclusion": "All 13 run-01/pilot attempts excluded as a whole after detecting ambient skill-context budget truncation; none selected based on answer quality. Original traces and attempts retained.",
+  "transport_retry_policy": {
+    "max_additional_attempts_per_cell": 1,
+    "eligibility": "Nonzero exit, no output, no observed usage, confirmed provider capacity failure only; same rule for both arms. No successful answer rerolls."
+  },
+  "generation_smoke": {
+    "case_id": "product_cedar_02",
+    "tool": "built-in image_gen",
+    "outputs": 2,
+    "selection": "first generation per arm, no rerolls; preselected before answer text inspection",
+    "input": "standalone final prompt only, no reference image attached",
+    "known_limits": "Backend model ID and seed are not exposed; label as tool workflow smoke, not verified GPT Image 2.5 API execution."
+  },
+  "blind_review": {
+    "reviewers": 2,
+    "type": "independent model agents with fresh context",
+    "rubric": "Five independent-design acceptance criteria per case, each 0/1/2; equal weights. No reward for length, framework names or headings.",
+    "winner": "A/B if higher total, otherwise tie. Both reviewers score before receiving the identity key.",
+    "disclosure": "Model/agent review is not human review; no human signature or approval is fabricated."
+  },
+  "context_check_sha256": "b08b0e9971bcbe121c71e5bd6e30f5b3d4230e6a25082529726f7d2c573ecad6"
+}

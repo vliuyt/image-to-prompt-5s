@@ -1,0 +1,34 @@
+{
+  "reviews": [
+    {
+      "reviewer": "blind-model-reviewer-1",
+      "wins": {
+        "with_skill": 1,
+        "baseline": 0,
+        "TIE": 5
+      },
+      "totals_out_of_60": {
+        "with_skill": 59,
+        "baseline": 58
+      }
+    },
+    {
+      "reviewer": "blind-model-reviewer-2",
+      "wins": {
+        "with_skill": 1,
+        "baseline": 0,
+        "TIE": 5
+      },
+      "totals_out_of_60": {
+        "with_skill": 59,
+        "baseline": 58
+      }
+    }
+  ],
+  "reviewer_type": "model agents, not humans",
+  "cases": 6,
+  "criteria_per_case": 5,
+  "scale_per_criterion": "0/1/2",
+  "independence": "fresh context, same inherited model family; assignments concealed; stylistic cues may reveal treatment",
+  "statistical_limit": "single response per cell, synthetic references, six cases; no population-level claim"
+}

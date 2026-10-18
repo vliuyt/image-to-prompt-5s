@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-18T07:51:52.755620+00:00",
+  "before_candidate_answers_read": true,
+  "status": "pilot invalidated for controlled-comparison purposes",
+  "reason": "One arm reported exceeded skills context budget; uncontrolled host skill catalog differed between requests. This is not a candidate-quality rejection. All pilot attempts are retained, but none will be selected for effect comparison.",
+  "next_protocol": "Disable the entire discovered skill catalog in both arms using session-only config; inspect model-visible input; then run every registered cell afresh. No prompt or skill content tuning based on pilot answers.",
+  "host_diagnostic": "SessionEnd clamp warning is separately retained; unknown diagnostics remain failures."
+}

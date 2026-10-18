@@ -1,35 +1,7 @@
-> Evidence scope: recorded v0.1.0 authored examples, identical on both sides. Not a model comparison, not human review, not evidence of improvement. See benchmark_methodology.md.
+# Real model execution
 
-# Output Execution Runs
+12 actual Codex vision calls in six paired cases, with observed timing and token usage; no fixture replay. Raw private CLI context is excluded from publication. Requested model: gpt-6.1-sol, existing OpenAI Codex login; backend model attestation is not supplied by the CLI.
 
-This report records how output-eval variants were produced and whether timing or token evidence is observed or estimated.
+See evals/live/results/run-02/runs.json and protocol.json in the repository for response hashes, per-cell observed usage and frozen inputs.
 
-- Cases: `2`
-- Variant runs: `4`
-- Command executed: `0`
-- Model executed: `0`
-- Recorded fixtures: `4`
-- Timing observed: `0`
-- Token observed: `0`
-- Token estimated: `4`
-- Delta: `0.0`
-- Gate pass: `True`
-
-No model-executed runs are recorded yet.
-
-Use `python3 scripts/yao.py output-exec --provider-runner openai` or `--runner-command` with a reviewed provider-backed runner to replace recorded fixtures with real model output evidence.
-
-## Runs
-
-| Case | Variant | Mode | Model | Duration ms | Tokens | Score | Status |
-| --- | --- | --- | --- | ---: | ---: | ---: | --- |
-| cup | baseline | recorded_fixture |  |  | 54 | 100.0 | pass |
-| cup | tie (identical fixtures) | recorded_fixture |  |  | 54 | 100.0 | pass |
-| poster | baseline | recorded_fixture |  |  | 65 | 100.0 | pass |
-| poster | tie (identical fixtures) | recorded_fixture |  |  | 65 | 100.0 | pass |
-
-## Next Fixes
-
-- Keep recorded fixtures as reproducible baselines, but do not describe them as model-executed evidence.
-- Use `scripts/provider_output_eval_runner.py` for provider-backed holdout cases when release confidence depends on real generation behavior.
-- Compare timing, token cost, and assertion deltas before promoting a skill to governed reuse.
+The pilot had 13 attempts and is excluded as a whole because of uncontrolled ambient skill-context truncation. It is retained in the attempt inventory, including one capacity failure with unknown token usage.

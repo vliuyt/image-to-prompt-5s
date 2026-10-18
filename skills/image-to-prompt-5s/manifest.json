@@ -1,6 +1,6 @@
 {
   "name": "image-to-prompt-5s",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "owner": "vliuyt",
   "updated_at": "2026-10-18",
   "review_cadence": "per-release",
@@ -13,8 +13,13 @@
   "output_contract": "0–6 visual breakdown plus one standalone natural-language prompt; prompt-only on request.",
   "rollback_boundary": "Reinstall v0.1.0 package; no host settings, generated images or user files changed.",
   "input_files": [
-    "evals/output/fixtures/cup.md",
-    "evals/output/fixtures/poster.md"
+    "evals/output/fixtures/mascot_front.png",
+    "evals/output/fixtures/mascot_threequarter.png",
+    "evals/output/fixtures/poster_embedded_command.png",
+    "evals/output/fixtures/poster_orbit_17.png",
+    "evals/output/fixtures/product_cedar_02.png",
+    "evals/output/fixtures/scene_three_figures.png",
+    "evals/output/fixtures/two_mugs.png"
   ],
-  "evidence_status": "Fixture and static checks only; model efficacy, human blind review and image generation are missing evidence."
+  "evidence_status": "12 real vision calls, 2 independent model-agent prompt reviews, 2 generated-image workflow calls and 2 independent model-agent image reviews. Human approval, broader statistical evidence and exact image-generation backend model remain missing evidence."
 }

@@ -1,0 +1,33 @@
+{
+  "case_id": "scene_three_figures",
+  "variant": "with_skill",
+  "provider": "openai",
+  "model": "gpt-6.1-sol",
+  "model_reporting": "requested model via existing Codex login; no server model attestation",
+  "execution_kind": "model",
+  "prompt_sha256": "d0630569d77f96c70bde7e71527a2f9185cf8180659e2abb5a50f455dcc7ca74",
+  "input_images": [
+    {
+      "name": "scene_three_figures.png",
+      "sha256": "634b16b191e30593220df649219d06d148f69fbc0024c533282c99312dac837b"
+    }
+  ],
+  "output": "生成一张横向 3:2 的极简几何平面插画：浅蓝色背景，底部为浅灰绿色地面，上方大面积留白。画面中恰好三个人，均为肤色圆形头部、无五官，身体和四肢由简单色块组成，使用粗深灰色轮廓线。左侧一位黑色短发、穿红色上衣的人坐在棕色长椅上，两条深色腿垂下；其画面右侧手臂斜向右下伸出，握着一根弯柄黑色手杖，杖身向右下倾斜，下端带黄色细条。中间一个体型较小、穿绿色上衣的人坐在同一张长椅上，两条腿悬垂，双臂沿身体两侧向下，面前腿上摊开一本白色书，书页朝向观者，中央有清晰折线。棕色长椅位于这两人身后，具有两条水平靠背板、一条宽座板和两根落地支腿。右侧一位穿紫色长方形上衣的人站在地面，两条深色直腿分开；一根深色牵引绳从其画面左侧手臂位置斜向左下，连接脚边偏左的一只棕色小狗。小狗侧身朝右，椭圆身体、右上方圆形头部、四条短腿，位于长椅与站立人物之间。保持手杖归左侧坐者、书归中间小人物、狗绳归右侧站立者，准确保留三人的左右顺序、坐立姿态和物品位置。整体采用均匀纯色色块，无渐变、无投影、无纹理，不添加文字或其他人物与物品。",
+  "tool_calls": [],
+  "usage": {
+    "input_tokens": 34233,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 510,
+    "reasoning_output_tokens": 70
+  },
+  "host_diagnostics": [
+    "SessionEnd hook timeout clamped to 3s (host diagnostic)"
+  ],
+  "failure_events": [],
+  "status": "pass",
+  "exit_code": 0,
+  "output_sha256": "61dbf5622d2c392f94b17fbadd8cb446d6376027001f5c8cc08ab48d1a54e7c7",
+  "duration_ms": 22926.05,
+  "attempt": 2
+}

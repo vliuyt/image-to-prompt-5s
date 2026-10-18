@@ -1,0 +1,26 @@
+{
+  "local_edit_blue_mug": {
+    "A": "baseline",
+    "B": "with_skill"
+  },
+  "mascot_two_views": {
+    "A": "with_skill",
+    "B": "baseline"
+  },
+  "product_cedar_02": {
+    "A": "with_skill",
+    "B": "baseline"
+  },
+  "scene_three_figures": {
+    "A": "baseline",
+    "B": "with_skill"
+  },
+  "poster_embedded_command": {
+    "A": "baseline",
+    "B": "with_skill"
+  },
+  "poster_orbit_17": {
+    "A": "with_skill",
+    "B": "baseline"
+  }
+}
