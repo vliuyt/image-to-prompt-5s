@@ -1,0 +1,16 @@
+{
+  "job": "Turn visible reference images into faithful, usable generation prompts without inventing unseen details.",
+  "exclusions": [
+    "OCR-only",
+    "direct generation",
+    "workplace 5S",
+    "no-reference prompt polishing"
+  ],
+  "inputs": [
+    "Reference images or explicitly labelled scene descriptions"
+  ],
+  "outputs": [
+    "0–6 analysis",
+    "Copyable prompt"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "ok": true,
+  "schema_version": "2.0",
+  "generated_at": "2026-10-18",
+  "skill_dir": "skills/image-to-prompt-5s",
+  "package_dir": "repository/.work/package",
+  "summary": {
+    "target_count": 1,
+    "adapter_count": 1,
+    "archive_present": true,
+    "archive_sha256": "fe4f895c752cd6c65d1164239984be079878f0ef9d8a045dcbccffb3377355ba",
+    "archive_entry_count": 30,
+    "nested_skill_entry_count": 0,
+    "failure_count": 0,
+    "warning_count": 0
+  },
+  "checks": [
+    {
+      "id": "package-manifest",
+      "status": "pass",
+      "detail": "Package manifest exists: repository/.work/package/manifest.json"
+    },
+    {
+      "id": "openai-adapter",
+      "status": "pass",
+      "detail": "Adapter exists for target: openai"
+    },
+    {
+      "id": "archive-safe-paths",
+      "status": "pass",
+      "detail": "Archive has no absolute or parent-traversal entries"
+    },
+    {
+      "id": "archive-entry-image-to-prompt-5s/SKILL.md",
+      "status": "pass",
+      "detail": "Archive contains image-to-prompt-5s/SKILL.md"
+    },
+    {
+      "id": "archive-entry-image-to-prompt-5s/manifest.json",
+      "status": "pass",
+      "detail": "Archive contains image-to-prompt-5s/manifest.json"
+    },
+    {
+      "id": "archive-entry-image-to-prompt-5s/agents/interface.yaml",
+      "status": "pass",
+      "detail": "Archive contains image-to-prompt-5s/agents/interface.yaml"
+    },
+    {
+      "id": "archive-single-skill-entrypoint",
+      "status": "pass",
+      "detail": "Archive exposes only the root SKILL.md entrypoint"
+    },
+    {
+      "id": "archive-excludes-generated",
+      "status": "pass",
+      "detail": "Archive excludes generated dist/, .previews/, and tests/tmp* contents"
+    },
+    {
+      "id": "registry-ok",
+      "status": "pass",
+      "detail": "Registry audit is OK"
+    },
+    {
+      "id": "registry-name-match",
+      "status": "pass",
+      "detail": "Registry package name matches package manifest"
+    },
+    {
+      "id": "registry-version-match",
+      "status": "pass",
+      "detail": "Registry package version matches package manifest"
+    },
+    {
+      "id": "registry-compat-openai",
+      "status": "pass",
+      "detail": "Registry compatibility is reviewable for target: openai"
+    }
+  ],
+  "failures": [],
+  "warnings": [],
+  "artifacts": {
+    "manifest": "repository/.work/package/manifest.json",
+    "archive": "repository/.work/package/image-to-prompt-5s.zip",
+    "json": "skills/image-to-prompt-5s/reports/package_verification.json",
+    "markdown": "skills/image-to-prompt-5s/reports/package_verification.md"
+  }
+}

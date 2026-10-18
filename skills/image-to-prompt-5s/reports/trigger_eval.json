@@ -1,0 +1,733 @@
+{
+  "threshold": 0.48,
+  "threshold_explanation": "Prompts at or above the threshold are treated as trigger matches. Scores are driven primarily by semantic intent coverage: packaging intent, workflow-to-skill transformation intent, reuse/distribution intent, and eval intent. Explicit exclusions such as summary-only, translation-only, one-off, document-only, or do-not-build directives apply direct penalties and can override otherwise similar wording.",
+  "false_positives": 0,
+  "false_negatives": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "bucket_stats": {
+    "should_trigger": {
+      "total": 8,
+      "passed": 8,
+      "pass_rate": 1.0
+    },
+    "should_not_trigger": {
+      "total": 6,
+      "passed": 6,
+      "pass_rate": 1.0
+    },
+    "near_neighbor": {
+      "total": 4,
+      "passed": 4,
+      "pass_rate": 1.0
+    }
+  },
+  "family_stats": {
+    "cn_reverse": {
+      "total": 3,
+      "passed": 3,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "pass_rate": 1.0
+    },
+    "en_reverse": {
+      "total": 3,
+      "passed": 3,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "pass_rate": 1.0
+    },
+    "style_transfer": {
+      "total": 1,
+      "passed": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "pass_rate": 1.0
+    },
+    "multi_image": {
+      "total": 1,
+      "passed": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "pass_rate": 1.0
+    },
+    "generate": {
+      "total": 2,
+      "passed": 2,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "pass_rate": 1.0
+    },
+    "ocr": {
+      "total": 2,
+      "passed": 2,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "pass_rate": 1.0
+    },
+    "workplace": {
+      "total": 2,
+      "passed": 2,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "pass_rate": 1.0
+    },
+    "polish": {
+      "total": 1,
+      "passed": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "pass_rate": 1.0
+    },
+    "translate": {
+      "total": 1,
+      "passed": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "pass_rate": 1.0
+    },
+    "explain": {
+      "total": 2,
+      "passed": 2,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "misfires": [],
+  "results": {
+    "should_trigger": [
+      {
+        "prompt": "按参考图反推图片生成提示词。",
+        "family": "cn_reverse",
+        "score": 0.92,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "reverse"
+          ],
+          "matched_desired_concepts": [
+            "reverse"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.0,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "reverse": [
+                "反推"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "帮我拆解参考图，写成 GPT Image 2.5 提示词。",
+        "family": "cn_reverse",
+        "score": 0.966,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "reverse"
+          ],
+          "matched_desired_concepts": [
+            "reverse"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.571,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "reverse": [
+                "拆解参考图"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "以图写提示词：保留画面构图和光线。",
+        "family": "cn_reverse",
+        "score": 0.96,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "reverse"
+          ],
+          "matched_desired_concepts": [
+            "reverse"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.5,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "reverse": [
+                "以图写提示词"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "Reverse-engineer this reference image into a generation prompt.",
+        "family": "en_reverse",
+        "score": 0.98,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "reverse"
+          ],
+          "matched_desired_concepts": [
+            "reverse"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.889,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "reverse": [
+                "reverse-engineer"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "Extract a prompt from this image.",
+        "family": "en_reverse",
+        "score": 0.96,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "reverse"
+          ],
+          "matched_desired_concepts": [
+            "reverse"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.5,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "reverse": [
+                "extract a prompt"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "参考图风格迁移到新产品，先给提示词。",
+        "family": "style_transfer",
+        "score": 0.92,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "reverse"
+          ],
+          "matched_desired_concepts": [
+            "reverse"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.0,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "reverse": [
+                "参考图风格迁移"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "Analyze the reference image composition and write an image-to-prompt result.",
+        "family": "en_reverse",
+        "score": 0.956,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "reverse"
+          ],
+          "matched_desired_concepts": [
+            "reverse"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.455,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "reverse": [
+                "image-to-prompt"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      },
+      {
+        "prompt": "两张图分别提供风格和产品，帮我反推提示词。",
+        "family": "multi_image",
+        "score": 0.92,
+        "predicted_trigger": true,
+        "expected_trigger": true,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "reverse"
+          ],
+          "matched_desired_concepts": [
+            "reverse"
+          ],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [],
+          "exclusive_negative_concepts": [],
+          "semantic_coverage": 1.0,
+          "support_score": 0,
+          "lexical_support": 0.0,
+          "negative_penalty": 0,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {
+              "reverse": [
+                "反推"
+              ]
+            },
+            "negative": {}
+          }
+        }
+      }
+    ],
+    "should_not_trigger": [
+      {
+        "prompt": "直接生成一张猫的图片。",
+        "family": "generate",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "reverse"
+          ],
+          "matched_desired_concepts": [],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [
+            "excluded"
+          ],
+          "exclusive_negative_concepts": [
+            "excluded"
+          ],
+          "semantic_coverage": 0.0,
+          "support_score": 0,
+          "lexical_support": 0.0,
+          "negative_penalty": 1.2,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {},
+            "negative": {
+              "excluded": [
+                "直接生成"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "prompt": "从参考图生成一张新图，直接出图。",
+        "family": "generate",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "reverse"
+          ],
+          "matched_desired_concepts": [],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [
+            "excluded"
+          ],
+          "exclusive_negative_concepts": [
+            "excluded"
+          ],
+          "semantic_coverage": 0.0,
+          "support_score": 0,
+          "lexical_support": 0.0,
+          "negative_penalty": 1.2,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {},
+            "negative": {
+              "excluded": [
+                "直接出图"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "prompt": "识别这张图片上的文字，只要 OCR。",
+        "family": "ocr",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "reverse"
+          ],
+          "matched_desired_concepts": [],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [
+            "excluded"
+          ],
+          "exclusive_negative_concepts": [
+            "excluded"
+          ],
+          "semantic_coverage": 0.0,
+          "support_score": 0,
+          "lexical_support": 0.333,
+          "negative_penalty": 1.2,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {},
+            "negative": {
+              "excluded": [
+                "只要 OCR"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "prompt": "介绍现场管理 5S。",
+        "family": "workplace",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "reverse"
+          ],
+          "matched_desired_concepts": [],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [
+            "excluded"
+          ],
+          "exclusive_negative_concepts": [
+            "excluded"
+          ],
+          "semantic_coverage": 0.0,
+          "support_score": 0,
+          "lexical_support": 0.5,
+          "negative_penalty": 1.2,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {},
+            "negative": {
+              "excluded": [
+                "现场管理"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "prompt": "润色这段已有提示词，没有参考图。",
+        "family": "polish",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "reverse"
+          ],
+          "matched_desired_concepts": [],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [
+            "excluded"
+          ],
+          "exclusive_negative_concepts": [
+            "excluded"
+          ],
+          "semantic_coverage": 0.0,
+          "support_score": 0,
+          "lexical_support": 0.0,
+          "negative_penalty": 1.2,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {},
+            "negative": {
+              "excluded": [
+                "没有参考图"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "prompt": "Translate this paragraph.",
+        "family": "translate",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "reverse"
+          ],
+          "matched_desired_concepts": [],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [
+            "excluded"
+          ],
+          "exclusive_negative_concepts": [
+            "excluded"
+          ],
+          "semantic_coverage": 0.0,
+          "support_score": 0,
+          "lexical_support": 0.0,
+          "negative_penalty": 1.2,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {},
+            "negative": {
+              "excluded": [
+                "translate this"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "near_neighbor": [
+      {
+        "prompt": "提取参考图风格，只解释风格，不要提示词。",
+        "family": "explain",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "reverse"
+          ],
+          "matched_desired_concepts": [],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [
+            "excluded"
+          ],
+          "exclusive_negative_concepts": [
+            "excluded"
+          ],
+          "semantic_coverage": 0.0,
+          "support_score": 0,
+          "lexical_support": 0.0,
+          "negative_penalty": 1.2,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {},
+            "negative": {
+              "excluded": [
+                "只解释",
+                "不要提示词"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "prompt": "Describe the reference image, no prompt needed.",
+        "family": "explain",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "reverse"
+          ],
+          "matched_desired_concepts": [],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [
+            "excluded"
+          ],
+          "exclusive_negative_concepts": [
+            "excluded"
+          ],
+          "semantic_coverage": 0.0,
+          "support_score": 0,
+          "lexical_support": 0.429,
+          "negative_penalty": 1.2,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {},
+            "negative": {
+              "excluded": [
+                "no prompt needed"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "prompt": "把参考图文字转成表格，只要 OCR。",
+        "family": "ocr",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "reverse"
+          ],
+          "matched_desired_concepts": [],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [
+            "excluded"
+          ],
+          "exclusive_negative_concepts": [
+            "excluded"
+          ],
+          "semantic_coverage": 0.0,
+          "support_score": 0,
+          "lexical_support": 0.333,
+          "negative_penalty": 1.2,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {},
+            "negative": {
+              "excluded": [
+                "只要 OCR"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "prompt": "Explain 5S workplace management.",
+        "family": "workplace",
+        "score": 0.0,
+        "predicted_trigger": false,
+        "expected_trigger": false,
+        "passed": true,
+        "score_detail": {
+          "mode": "semantic-intent",
+          "desired_positive_concepts": [
+            "reverse"
+          ],
+          "matched_desired_concepts": [],
+          "extra_positive_concepts": [],
+          "matched_negative_concepts": [
+            "excluded"
+          ],
+          "exclusive_negative_concepts": [
+            "excluded"
+          ],
+          "semantic_coverage": 0.0,
+          "support_score": 0,
+          "lexical_support": 0.75,
+          "negative_penalty": 1.2,
+          "coverage_boost": 0.0,
+          "concept_evidence": {
+            "positive": {},
+            "negative": {
+              "excluded": [
+                "workplace"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "comparison": {
+    "baseline_false_positives": 0,
+    "baseline_false_negatives": 0,
+    "improved_false_positives": 0,
+    "improved_false_negatives": 0,
+    "false_positive_delta": 0,
+    "false_negative_delta": 0,
+    "baseline_precision": 1.0,
+    "improved_precision": 1.0,
+    "baseline_recall": 1.0,
+    "improved_recall": 1.0
+  }
+}

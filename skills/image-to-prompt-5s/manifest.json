@@ -1,0 +1,20 @@
+{
+  "name": "image-to-prompt-5s",
+  "version": "0.2.0",
+  "owner": "vliuyt",
+  "updated_at": "2026-10-18",
+  "review_cadence": "per-release",
+  "status": "experimental",
+  "maturity_tier": "governed",
+  "lifecycle_stage": "governed",
+  "target_platforms": [
+    "openai"
+  ],
+  "output_contract": "0–6 visual breakdown plus one standalone natural-language prompt; prompt-only on request.",
+  "rollback_boundary": "Reinstall v0.1.0 package; no host settings, generated images or user files changed.",
+  "input_files": [
+    "evals/output/fixtures/cup.md",
+    "evals/output/fixtures/poster.md"
+  ],
+  "evidence_status": "Fixture and static checks only; model efficacy, human blind review and image generation are missing evidence."
+}

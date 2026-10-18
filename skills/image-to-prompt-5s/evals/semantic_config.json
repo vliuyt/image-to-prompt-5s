@@ -1,0 +1,38 @@
+{
+  "fallback_positive_concepts": [
+    "reverse"
+  ],
+  "positive_concepts": {
+    "reverse": {
+      "weight": 1,
+      "phrases": [
+        "反推",
+        "参考图拆解",
+        "以图写提示词",
+        "参考图风格迁移",
+        "image-to-prompt",
+        "reverse-engineer",
+        "extract a prompt",
+        "拆解参考图"
+      ]
+    }
+  },
+  "negative_concepts": {
+    "excluded": {
+      "weight": 1.2,
+      "exclusive": true,
+      "phrases": [
+        "只要 OCR",
+        "直接出图",
+        "直接生成",
+        "现场管理",
+        "workplace",
+        "没有参考图",
+        "只解释",
+        "不要提示词",
+        "no prompt needed",
+        "translate this"
+      ]
+    }
+  }
+}

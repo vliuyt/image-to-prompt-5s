@@ -1,0 +1,89 @@
+{
+  "ok": true,
+  "schema_version": "2.0",
+  "generated_at": "2026-10-18",
+  "previous": {
+    "name": "image-to-prompt-5s",
+    "version": "0.1.0",
+    "targets": [
+      "openai"
+    ]
+  },
+  "current": {
+    "name": "image-to-prompt-5s",
+    "version": "0.2.0",
+    "targets": [
+      "openai"
+    ]
+  },
+  "summary": {
+    "declared_bump": "minor",
+    "recommended_bump": "minor",
+    "breaking_change_count": 0,
+    "added_target_count": 0,
+    "metadata_change_count": 4,
+    "checksum_change_count": 2,
+    "failure_count": 0,
+    "warning_count": 0
+  },
+  "upgrade_diff": {
+    "name_changed": false,
+    "added_targets": [],
+    "removed_targets": [],
+    "compatibility_changes": [
+      {
+        "target": "openai",
+        "from": "missing",
+        "to": "pass",
+        "direction": "improved"
+      }
+    ],
+    "metadata_changes": [
+      {
+        "field": "description",
+        "from": "Reverse-engineer reference images into generation-ready prompts using task goal, Subject, Style, Shot, Setting, Scene lighting, and constraints. Use for 图片反推、参考图拆解、复刻画面、提取风格 or image-to-prompt requests, especially for GPT Image 2.5.",
+        "to": "Reverse-engineer reference images into generation-ready prompts for GPT Image 2.5 using task goal + 5S + constraints. Use for 图片反推、参考图拆解、以图写提示词、参考图风格迁移 or image-to-prompt. Exclude OCR-only, direct image generation, prompt polishing without a reference, and workplace 5S management."
+      },
+      {
+        "field": "maturity",
+        "from": "",
+        "to": "governed"
+      },
+      {
+        "field": "review_cadence",
+        "from": "",
+        "to": "per-release"
+      },
+      {
+        "field": "trust_level",
+        "from": "",
+        "to": "local"
+      }
+    ],
+    "checksum_changes": [
+      {
+        "field": "archive_sha256",
+        "from": "2108ff970bde504673e400b79f90c42ff9b14b13ec75e236529812234d6bbbe4",
+        "to": "fe4f895c752cd6c65d1164239984be079878f0ef9d8a045dcbccffb3377355ba"
+      },
+      {
+        "field": "package_sha256",
+        "from": "",
+        "to": "af85f014f945703588248fe021423e62b73d9796578cc65cf527bb18b25529a0"
+      }
+    ]
+  },
+  "release_notes": [
+    "Recommended version bump: minor.",
+    "Package or archive checksum changed; reviewers should verify package artifacts before release.",
+    "Package verification evidence: reports/package_verification.md."
+  ],
+  "failures": [],
+  "warnings": [],
+  "artifacts": {
+    "previous_package": "skills/image-to-prompt-5s/reports/previous-package.json",
+    "current_package": "skills/image-to-prompt-5s/reports/registry_audit.json",
+    "json": "skills/image-to-prompt-5s/reports/upgrade_check.json",
+    "markdown": "skills/image-to-prompt-5s/reports/upgrade_check.md"
+  }
+}

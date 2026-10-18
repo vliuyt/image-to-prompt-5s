@@ -1,0 +1,217 @@
+{
+  "ok": true,
+  "cases": "skills/image-to-prompt-5s/evals/output/cases.jsonl",
+  "summary": {
+    "case_count": 2,
+    "file_backed_case_count": 2,
+    "near_neighbor_case_count": 0,
+    "boundary_case_count": 0,
+    "baseline_pass_rate": 100.0,
+    "with_skill_pass_rate": 100.0,
+    "delta": 0.0,
+    "regression_count": 0,
+    "gate_pass": true,
+    "failure_taxonomy": [],
+    "blind_pair_count": 2
+  },
+  "results": [
+    {
+      "id": "cup",
+      "prompt": "竖版产品图：一只米白色陶瓷杯在浅木桌上，杯把朝右。杯子在下半部，上方留白。左侧窗光，右侧柔影，浅灰虚化背景。无字。",
+      "input_files": [
+        "fixtures/cup.md"
+      ],
+      "metadata": {
+        "source": "Published v0.1.0 authored example, unchanged on both sides; regression fixture only, not model efficacy comparison."
+      },
+      "baseline": {
+        "score": 100.0,
+        "passed_count": 4,
+        "failed_count": 0,
+        "checks": [
+          {
+            "id": "orientation",
+            "description": "orientation visual invariant regression check",
+            "weight": 1.0,
+            "failure_type": "assertion_failed",
+            "passed": true,
+            "missing": [],
+            "present_forbidden": []
+          },
+          {
+            "id": "subject",
+            "description": "subject visual invariant regression check",
+            "weight": 1.0,
+            "failure_type": "assertion_failed",
+            "passed": true,
+            "missing": [],
+            "present_forbidden": []
+          },
+          {
+            "id": "lighting",
+            "description": "lighting visual invariant regression check",
+            "weight": 1.0,
+            "failure_type": "assertion_failed",
+            "passed": true,
+            "missing": [],
+            "present_forbidden": []
+          },
+          {
+            "id": "text",
+            "description": "text visual invariant regression check",
+            "weight": 1.0,
+            "failure_type": "assertion_failed",
+            "passed": true,
+            "missing": [],
+            "present_forbidden": []
+          }
+        ],
+        "failed": []
+      },
+      "with_skill": {
+        "score": 100.0,
+        "passed_count": 4,
+        "failed_count": 0,
+        "checks": [
+          {
+            "id": "orientation",
+            "description": "orientation visual invariant regression check",
+            "weight": 1.0,
+            "failure_type": "assertion_failed",
+            "passed": true,
+            "missing": [],
+            "present_forbidden": []
+          },
+          {
+            "id": "subject",
+            "description": "subject visual invariant regression check",
+            "weight": 1.0,
+            "failure_type": "assertion_failed",
+            "passed": true,
+            "missing": [],
+            "present_forbidden": []
+          },
+          {
+            "id": "lighting",
+            "description": "lighting visual invariant regression check",
+            "weight": 1.0,
+            "failure_type": "assertion_failed",
+            "passed": true,
+            "missing": [],
+            "present_forbidden": []
+          },
+          {
+            "id": "text",
+            "description": "text visual invariant regression check",
+            "weight": 1.0,
+            "failure_type": "assertion_failed",
+            "passed": true,
+            "missing": [],
+            "present_forbidden": []
+          }
+        ],
+        "failed": []
+      },
+      "delta": 0.0,
+      "winner": "with_skill",
+      "failure_taxonomy": []
+    },
+    {
+      "id": "poster",
+      "prompt": "方形海报：深蓝底，右侧黄色圆形，左侧两行白色标题。把标题改成周末灵感，不要任何其他文字，只给 prompt。",
+      "input_files": [
+        "fixtures/poster.md"
+      ],
+      "metadata": {
+        "source": "Published v0.1.0 authored example, unchanged on both sides; regression fixture only, not model efficacy comparison."
+      },
+      "baseline": {
+        "score": 100.0,
+        "passed_count": 3,
+        "failed_count": 0,
+        "checks": [
+          {
+            "id": "layout",
+            "description": "layout visual invariant regression check",
+            "weight": 1.0,
+            "failure_type": "assertion_failed",
+            "passed": true,
+            "missing": [],
+            "present_forbidden": []
+          },
+          {
+            "id": "copy",
+            "description": "copy visual invariant regression check",
+            "weight": 1.0,
+            "failure_type": "assertion_failed",
+            "passed": true,
+            "missing": [],
+            "present_forbidden": []
+          },
+          {
+            "id": "no_extra_copy",
+            "description": "no_extra_copy visual invariant regression check",
+            "weight": 1.0,
+            "failure_type": "assertion_failed",
+            "passed": true,
+            "missing": [],
+            "present_forbidden": []
+          }
+        ],
+        "failed": []
+      },
+      "with_skill": {
+        "score": 100.0,
+        "passed_count": 3,
+        "failed_count": 0,
+        "checks": [
+          {
+            "id": "layout",
+            "description": "layout visual invariant regression check",
+            "weight": 1.0,
+            "failure_type": "assertion_failed",
+            "passed": true,
+            "missing": [],
+            "present_forbidden": []
+          },
+          {
+            "id": "copy",
+            "description": "copy visual invariant regression check",
+            "weight": 1.0,
+            "failure_type": "assertion_failed",
+            "passed": true,
+            "missing": [],
+            "present_forbidden": []
+          },
+          {
+            "id": "no_extra_copy",
+            "description": "no_extra_copy visual invariant regression check",
+            "weight": 1.0,
+            "failure_type": "assertion_failed",
+            "passed": true,
+            "missing": [],
+            "present_forbidden": []
+          }
+        ],
+        "failed": []
+      },
+      "delta": 0.0,
+      "winner": "with_skill",
+      "failure_taxonomy": []
+    }
+  ],
+  "failures": [],
+  "blind_review": {
+    "pack": "skills/image-to-prompt-5s/reports/output_blind_review_pack.json",
+    "answer_key": "skills/image-to-prompt-5s/reports/output_blind_answer_key.json",
+    "pair_count": 2
+  },
+  "artifacts": {
+    "json": "skills/image-to-prompt-5s/reports/output_quality_scorecard.json",
+    "markdown": "skills/image-to-prompt-5s/reports/output_quality_scorecard.md",
+    "blind_review_pack_json": "skills/image-to-prompt-5s/reports/output_blind_review_pack.json",
+    "blind_review_pack_md": "skills/image-to-prompt-5s/reports/output_blind_review_pack.md",
+    "blind_answer_key_json": "skills/image-to-prompt-5s/reports/output_blind_answer_key.json"
+  },
+  "evidence_scope": "recorded fixtures only; identical examples on both sides; no empirical gain"
+}

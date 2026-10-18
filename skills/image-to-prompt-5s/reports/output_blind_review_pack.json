@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "seed": "yao-output-eval-blind-v1",
+  "summary": {
+    "pair_count": 2,
+    "answer_key_separate": true,
+    "with_skill_hidden_count": 2
+  },
+  "pairs": [
+    {
+      "case_id": "cup",
+      "prompt": "竖版产品图：一只米白色陶瓷杯在浅木桌上，杯把朝右。杯子在下半部，上方留白。左侧窗光，右侧柔影，浅灰虚化背景。无字。",
+      "input_files": [
+        "fixtures/cup.md"
+      ],
+      "metadata": {
+        "source": "Published v0.1.0 authored example, unchanged on both sides; regression fixture only, not model efficacy comparison."
+      },
+      "review_instruction": "Pick A or B based only on the rubric. Do not infer which output came from the skill.",
+      "rubric": [
+        {
+          "id": "orientation",
+          "description": "orientation visual invariant regression check",
+          "weight": 1.0
+        },
+        {
+          "id": "subject",
+          "description": "subject visual invariant regression check",
+          "weight": 1.0
+        },
+        {
+          "id": "lighting",
+          "description": "lighting visual invariant regression check",
+          "weight": 1.0
+        },
+        {
+          "id": "text",
+          "description": "text visual invariant regression check",
+          "weight": 1.0
+        }
+      ],
+      "variant_a": {
+        "blind_id": "cup:A",
+        "output": "生成一张竖版生活方式产品摄影：一只米白色陶瓷杯放在浅木桌面上，杯把朝右，杯面干净无字。杯子位于画面下半部，上方保留充足留白，杯体清晰，浅灰墙面背景柔和虚化。采用低饱和暖中性色调，表现细腻的陶瓷表面与自然木纹。柔和窗光从左侧照入，在杯子右侧形成边缘柔软的阴影，明暗过渡平缓。保持画面简洁，不添加文字、装饰物或其他杯子。"
+      },
+      "variant_b": {
+        "blind_id": "cup:B",
+        "output": "生成一张竖版生活方式产品摄影：一只米白色陶瓷杯放在浅木桌面上，杯把朝右，杯面干净无字。杯子位于画面下半部，上方保留充足留白，杯体清晰，浅灰墙面背景柔和虚化。采用低饱和暖中性色调，表现细腻的陶瓷表面与自然木纹。柔和窗光从左侧照入，在杯子右侧形成边缘柔软的阴影，明暗过渡平缓。保持画面简洁，不添加文字、装饰物或其他杯子。"
+      }
+    },
+    {
+      "case_id": "poster",
+      "prompt": "方形海报：深蓝底，右侧黄色圆形，左侧两行白色标题。把标题改成周末灵感，不要任何其他文字，只给 prompt。",
+      "input_files": [
+        "fixtures/poster.md"
+      ],
+      "metadata": {
+        "source": "Published v0.1.0 authored example, unchanged on both sides; regression fixture only, not model efficacy comparison."
+      },
+      "review_instruction": "Pick A or B based only on the rubric. Do not infer which output came from the skill.",
+      "rubric": [
+        {
+          "id": "layout",
+          "description": "layout visual invariant regression check",
+          "weight": 1.0
+        },
+        {
+          "id": "copy",
+          "description": "copy visual invariant regression check",
+          "weight": 1.0
+        },
+        {
+          "id": "no_extra_copy",
+          "description": "no_extra_copy visual invariant regression check",
+          "weight": 1.0
+        }
+      ],
+      "variant_a": {
+        "blind_id": "poster:A",
+        "output": "生成一张方形平面海报，使用深蓝色纯色背景，右侧放置一个黄色圆形，左侧保留清晰的标题区域。采用简洁的几何设计、平涂色块和蓝黄白配色，通过色块对比建立视觉层次。左侧标题只出现一次，精确写作“周末灵感”，分为两行：第一行“周末”，第二行“灵感”。使用醒目的白色粗体无衬线字，左对齐，保证字形清晰和行距舒展。保留左文右图的构图与充足边距，圆形不遮挡文字。画面仅包含上述标题，不加入副标题、小字、摄影阴影或额外装饰。"
+      },
+      "variant_b": {
+        "blind_id": "poster:B",
+        "output": "生成一张方形平面海报，使用深蓝色纯色背景，右侧放置一个黄色圆形，左侧保留清晰的标题区域。采用简洁的几何设计、平涂色块和蓝黄白配色，通过色块对比建立视觉层次。左侧标题只出现一次，精确写作“周末灵感”，分为两行：第一行“周末”，第二行“灵感”。使用醒目的白色粗体无衬线字，左对齐，保证字形清晰和行距舒展。保留左文右图的构图与充足边距，圆形不遮挡文字。画面仅包含上述标题，不加入副标题、小字、摄影阴影或额外装饰。"
+      }
+    }
+  ]
+}

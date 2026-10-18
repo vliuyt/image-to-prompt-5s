@@ -1,0 +1,14 @@
+{
+  "name": "image-to-prompt-5s",
+  "version": "0.1.0",
+  "description": "Reverse-engineer reference images into generation-ready prompts using task goal, Subject, Style, Shot, Setting, Scene lighting, and constraints. Use for 图片反推、参考图拆解、复刻画面、提取风格 or image-to-prompt requests, especially for GPT Image 2.5.",
+  "owner": "vliuyt",
+  "license": "MIT",
+  "targets": [
+    "openai"
+  ],
+  "checksums": {
+    "archive_sha256": "2108ff970bde504673e400b79f90c42ff9b14b13ec75e236529812234d6bbbe4"
+  },
+  "evidence_note": "Limited baseline reconstructed from published v0.1.0 archive and tag. There was no Yao registry, maturity declaration or conformance report; missing metadata remains unknown."
+}

@@ -1,0 +1,171 @@
+{
+  "ok": true,
+  "workspace_root": "repository/skills",
+  "summary": {
+    "skill_count": 1,
+    "actionable_skill_count": 1,
+    "route_collision_count": 0,
+    "actionable_route_collision_count": 0,
+    "owner_gap_count": 0,
+    "actionable_owner_gap_count": 0,
+    "stale_count": 0,
+    "actionable_stale_count": 0,
+    "shared_resource_count": 0,
+    "no_route_opportunity_count": 0,
+    "telemetry_report_count": 0,
+    "drift_signal_count": 1,
+    "actionable_drift_signal_count": 1,
+    "non_actionable_issue_count": 0
+  },
+  "scope_policy": {
+    "present": false,
+    "path": "skill_atlas/policy.json",
+    "rules": []
+  },
+  "catalog": {
+    "workspace_root": "repository/skills",
+    "generated_at": "2026-10-18",
+    "skills": [
+      {
+        "name": "image-to-prompt-5s",
+        "path": "image-to-prompt-5s",
+        "description": "Reverse-engineer reference images into generation-ready prompts for GPT Image 2.5 using task goal + 5S + constraints. Use for 图片反推、参考图拆解、以图写提示词、参考图风格迁移 or image-to-prompt. Exclude OCR-only, direct image generation, prompt polishing without a reference, and workplace 5S management.",
+        "owner": "vliuyt",
+        "version": "0.2.0",
+        "status": "experimental",
+        "maturity": "governed",
+        "updated_at": "2026-10-18",
+        "review_cadence": "per-release",
+        "targets": [
+          "openai"
+        ],
+        "resources": [
+          "references/analysis-guide.md",
+          "references/delivery-checklist.md",
+          "references/examples.md",
+          "references/output-template.md"
+        ],
+        "token_set": [
+          "5s",
+          "constraints",
+          "direct",
+          "exclude",
+          "generation",
+          "generation-ready",
+          "goal",
+          "gpt",
+          "image",
+          "image-to-prompt",
+          "images",
+          "management",
+          "ocr-only",
+          "or",
+          "polishing",
+          "prompt",
+          "prompts",
+          "reference",
+          "reverse-engineer",
+          "task",
+          "using",
+          "without",
+          "workplace",
+          "以图写提示词",
+          "参考图拆解",
+          "参考图风格迁移",
+          "图片反推"
+        ],
+        "atlas_scope": "release",
+        "actionable": true,
+        "scope_reason": "default release-actionable skill",
+        "telemetry": {
+          "report_present": false,
+          "report": "image-to-prompt-5s/reports/adoption_drift_report.json",
+          "risk_band": "missing",
+          "event_count": 0,
+          "adoption_sample_count": 0,
+          "adoption_rate": 0,
+          "candidate_count": 0
+        }
+      }
+    ],
+    "summary": {
+      "skill_count": 1,
+      "actionable_skill_count": 1,
+      "route_collision_count": 0,
+      "actionable_route_collision_count": 0,
+      "owner_gap_count": 0,
+      "actionable_owner_gap_count": 0,
+      "stale_count": 0,
+      "actionable_stale_count": 0,
+      "shared_resource_count": 0,
+      "no_route_opportunity_count": 0,
+      "telemetry_report_count": 0,
+      "drift_signal_count": 1,
+      "actionable_drift_signal_count": 1,
+      "non_actionable_issue_count": 0
+    }
+  },
+  "route_collisions": [],
+  "actionable_route_collisions": [],
+  "dependency_graph": {
+    "nodes": [
+      {
+        "name": "image-to-prompt-5s",
+        "path": "image-to-prompt-5s"
+      }
+    ],
+    "shared_resources": []
+  },
+  "stale_skills": [],
+  "actionable_stale_skills": [],
+  "owner_review_gaps": [],
+  "actionable_owner_review_gaps": [],
+  "drift_signals": [
+    {
+      "name": "image-to-prompt-5s",
+      "path": "image-to-prompt-5s",
+      "source": "image-to-prompt-5s/reports/adoption_drift_report.json",
+      "risk_band": "no-data",
+      "signal_types": [
+        "no telemetry"
+      ],
+      "recommendation": "Render adoption drift evidence or record a small metadata-only sample before release review.",
+      "actionable": true,
+      "scope": "release",
+      "summary": {
+        "event_count": 0,
+        "adoption_sample_count": 0
+      }
+    }
+  ],
+  "actionable_drift_signals": [
+    {
+      "name": "image-to-prompt-5s",
+      "path": "image-to-prompt-5s",
+      "source": "image-to-prompt-5s/reports/adoption_drift_report.json",
+      "risk_band": "no-data",
+      "signal_types": [
+        "no telemetry"
+      ],
+      "recommendation": "Render adoption drift evidence or record a small metadata-only sample before release review.",
+      "actionable": true,
+      "scope": "release",
+      "summary": {
+        "event_count": 0,
+        "adoption_sample_count": 0
+      }
+    }
+  ],
+  "no_route_opportunities": [],
+  "artifacts": {
+    "catalog": "repository/.work/atlas/catalog.json",
+    "route_overlap_matrix": "repository/.work/atlas/route_overlap_matrix.csv",
+    "dependency_graph": "repository/.work/atlas/dependency_graph.json",
+    "stale_skills": "repository/.work/atlas/stale_skills.json",
+    "owner_review_gaps": "repository/.work/atlas/owner_review_gaps.json",
+    "drift_signals": "repository/.work/atlas/drift_signals.json",
+    "no_route_opportunities": "repository/.work/atlas/no_route_opportunities.json",
+    "report_json": "skills/image-to-prompt-5s/reports/skill_atlas.json",
+    "report_html": "skills/image-to-prompt-5s/reports/skill_atlas.html"
+  }
+}

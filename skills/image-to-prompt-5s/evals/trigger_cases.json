@@ -1,0 +1,81 @@
+{
+  "recommended_threshold": 0.48,
+  "should_trigger": [
+    {
+      "text": "按参考图反推图片生成提示词。",
+      "family": "cn_reverse"
+    },
+    {
+      "text": "帮我拆解参考图，写成 GPT Image 2.5 提示词。",
+      "family": "cn_reverse"
+    },
+    {
+      "text": "以图写提示词：保留画面构图和光线。",
+      "family": "cn_reverse"
+    },
+    {
+      "text": "Reverse-engineer this reference image into a generation prompt.",
+      "family": "en_reverse"
+    },
+    {
+      "text": "Extract a prompt from this image.",
+      "family": "en_reverse"
+    },
+    {
+      "text": "参考图风格迁移到新产品，先给提示词。",
+      "family": "style_transfer"
+    },
+    {
+      "text": "Analyze the reference image composition and write an image-to-prompt result.",
+      "family": "en_reverse"
+    },
+    {
+      "text": "两张图分别提供风格和产品，帮我反推提示词。",
+      "family": "multi_image"
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "text": "直接生成一张猫的图片。",
+      "family": "generate"
+    },
+    {
+      "text": "从参考图生成一张新图，直接出图。",
+      "family": "generate"
+    },
+    {
+      "text": "识别这张图片上的文字，只要 OCR。",
+      "family": "ocr"
+    },
+    {
+      "text": "介绍现场管理 5S。",
+      "family": "workplace"
+    },
+    {
+      "text": "润色这段已有提示词，没有参考图。",
+      "family": "polish"
+    },
+    {
+      "text": "Translate this paragraph.",
+      "family": "translate"
+    }
+  ],
+  "near_neighbor": [
+    {
+      "text": "提取参考图风格，只解释风格，不要提示词。",
+      "family": "explain"
+    },
+    {
+      "text": "Describe the reference image, no prompt needed.",
+      "family": "explain"
+    },
+    {
+      "text": "把参考图文字转成表格，只要 OCR。",
+      "family": "ocr"
+    },
+    {
+      "text": "Explain 5S workplace management.",
+      "family": "workplace"
+    }
+  ]
+}

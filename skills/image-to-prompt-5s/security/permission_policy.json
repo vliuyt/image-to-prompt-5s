@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "capabilities": {
+    "network": {
+      "decision": "not-required",
+      "scope": "Prompt-only runtime; no packaged executable scripts or automatic network, subprocess or file mutation. Host controls remain authoritative."
+    },
+    "file_write": {
+      "decision": "not-required",
+      "scope": "Prompt-only runtime; no packaged executable scripts or automatic network, subprocess or file mutation. Host controls remain authoritative."
+    },
+    "subprocess": {
+      "decision": "not-required",
+      "scope": "Prompt-only runtime; no packaged executable scripts or automatic network, subprocess or file mutation. Host controls remain authoritative."
+    }
+  }
+}

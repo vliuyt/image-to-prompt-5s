@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "ok": true,
+  "cases": "skills/image-to-prompt-5s/evals/output/cases.jsonl",
+  "runner": {
+    "mode": "recorded_fixture",
+    "command": [],
+    "timeout_seconds": null
+  },
+  "summary": {
+    "case_count": 2,
+    "variant_run_count": 4,
+    "command_executed_count": 0,
+    "model_executed_count": 0,
+    "recorded_fixture_count": 4,
+    "timing_observed_count": 0,
+    "token_observed_count": 0,
+    "token_estimated_count": 4,
+    "baseline_pass_rate": 100.0,
+    "with_skill_pass_rate": 100.0,
+    "delta": 0.0,
+    "regression_count": 0,
+    "failure_count": 0,
+    "gate_pass": true
+  },
+  "runs": [
+    {
+      "case_id": "cup",
+      "variant": "baseline",
+      "status": "pass",
+      "execution_mode": "recorded_fixture",
+      "model_executed": false,
+      "command_executed": false,
+      "duration_ms": null,
+      "provider": "",
+      "model": "",
+      "usage": {
+        "input_tokens": 14,
+        "output_tokens": 40,
+        "total_tokens": 54,
+        "estimated": true
+      },
+      "score": 100.0,
+      "passed_count": 4,
+      "failed_count": 0,
+      "failed_assertions": [],
+      "output_sha256": "e7d2accc1afc9768979ca96e9c360da6ef9035d85b0dfbadcf2018718a0a2ae7",
+      "failure": ""
+    },
+    {
+      "case_id": "cup",
+      "variant": "with_skill",
+      "status": "pass",
+      "execution_mode": "recorded_fixture",
+      "model_executed": false,
+      "command_executed": false,
+      "duration_ms": null,
+      "provider": "",
+      "model": "",
+      "usage": {
+        "input_tokens": 14,
+        "output_tokens": 40,
+        "total_tokens": 54,
+        "estimated": true
+      },
+      "score": 100.0,
+      "passed_count": 4,
+      "failed_count": 0,
+      "failed_assertions": [],
+      "output_sha256": "e7d2accc1afc9768979ca96e9c360da6ef9035d85b0dfbadcf2018718a0a2ae7",
+      "failure": ""
+    },
+    {
+      "case_id": "poster",
+      "variant": "baseline",
+      "status": "pass",
+      "execution_mode": "recorded_fixture",
+      "model_executed": false,
+      "command_executed": false,
+      "duration_ms": null,
+      "provider": "",
+      "model": "",
+      "usage": {
+        "input_tokens": 14,
+        "output_tokens": 51,
+        "total_tokens": 65,
+        "estimated": true
+      },
+      "score": 100.0,
+      "passed_count": 3,
+      "failed_count": 0,
+      "failed_assertions": [],
+      "output_sha256": "fed2c9f8e6c8f103f0bd835540ff2a0afbf3d9cb6735b04693171a3649a98456",
+      "failure": ""
+    },
+    {
+      "case_id": "poster",
+      "variant": "with_skill",
+      "status": "pass",
+      "execution_mode": "recorded_fixture",
+      "model_executed": false,
+      "command_executed": false,
+      "duration_ms": null,
+      "provider": "",
+      "model": "",
+      "usage": {
+        "input_tokens": 14,
+        "output_tokens": 51,
+        "total_tokens": 65,
+        "estimated": true
+      },
+      "score": 100.0,
+      "passed_count": 3,
+      "failed_count": 0,
+      "failed_assertions": [],
+      "output_sha256": "fed2c9f8e6c8f103f0bd835540ff2a0afbf3d9cb6735b04693171a3649a98456",
+      "failure": ""
+    }
+  ],
+  "failures": [],
+  "artifacts": {
+    "json": "skills/image-to-prompt-5s/reports/output_execution_runs.json",
+    "markdown": "skills/image-to-prompt-5s/reports/output_execution_runs.md"
+  }
+}

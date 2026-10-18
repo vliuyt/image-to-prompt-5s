@@ -6,6 +6,10 @@
 
 An installable agent skill that turns reference images into generation-ready prompts. It uses task goal, five visual dimensions, and constraints, with Chinese-first documentation and natural-language output for GPT Image 2.5.
 
+## 当前版本
+
+`main` 已按 **Yao Meta Skill** 迭代为 `0.2.0 experimental`。正式发布审查仍缺少模型执行和独立盲评证据，因此最新正式下载包保留 `v0.1.0`。要使用本次迭代可按下方克隆方式安装。详见 [本轮审查与证据范围](reports/v0.2.0-review.md)。
+
 ## 它会做什么
 
 | 部分 | 回答的问题 |
@@ -78,10 +82,11 @@ GPT Image 2.5 的提示词使用自然语言，精确文案、位置、参考图
 ```text
 skills/image-to-prompt-5s/
 ├── SKILL.md
-├── agents/openai.yaml
+├── agents/                  # OpenAI UI 与 Yao 接口元数据
 └── references/
     ├── output-template.md
     └── examples.md
+# 同目录还有 manifest.json、evals/、security/ 和按需读取的 reports/
 evals/scenarios.md
 LICENSE
 ```
